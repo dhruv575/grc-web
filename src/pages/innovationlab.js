@@ -126,6 +126,7 @@ const ImageWrapper = s.div`
   @media screen and (max-width: 768px) {
     padding: 4rem 1rem;
     text-align: center;
+    display: none; /* Hide the image on small screens */
   }
 `
 
