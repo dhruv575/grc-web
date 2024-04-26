@@ -128,6 +128,9 @@ const List = s.ul`
   list-style-type: none; // No bullets
   padding: 0rem 11rem;
   ${POPPINS_REGULAR}
+  @media (max-width: 768px) {
+    padding 0rem 2 rem; // Smaller font size for mobile responsiveness
+  }
 `;
 
 const ListItem = s.li`

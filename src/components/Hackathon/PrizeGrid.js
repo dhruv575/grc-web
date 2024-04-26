@@ -14,6 +14,9 @@ const PrizeGrid = styled.div`
   grid-template-columns: repeat(3, 1fr); // Three columns for the prizes
   gap: 20px;
   text-align: center; // Center text for all items in the prize grid
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr); // Three columns for the prizes
+  }
 `;
 
 const PrizeBlock = styled.div`
