@@ -131,11 +131,12 @@ const ImageWrapper = s.div`
 
 const FlexRow = s.div`
   display: flex;
-  alignItems: center;
-  justifyContent: space-between
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
 
-  @media screen and (max-width: 768px) {
-    flexDirection: column;
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `
 
