@@ -162,7 +162,7 @@ const Departments = () => {
     <Container title="Departments | ">
       <StyledRow style={{ margin: '5rem 0 2rem 0' }}>
         <Col lg={4}>
-          <PageTitle> Our Team </PageTitle>
+          <PageTitle> Our Departments </PageTitle>
           <StyledPageDescription>
           DP Business consists of five departments dedicated to preserving the reach and financial success of The Daily Pennsylvanian, Inc. Students can apply to the Strategy & Promotion, Innovation Lab, Consulting, Finance & Accounting, and Analytics departments. These teams offer the unique opportunity of providing practical work experience to students and a chance to apply business strategies and tools to improve an independent, functioning media company. DP Business also provides an engaging community, emphasizing collaboration across editorial and business departments. For more information about our media products, check out our&nbsp;
             <StyledAnchor href="https://thedp.com" target="_blank">

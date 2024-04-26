@@ -8,8 +8,8 @@ import { MONTSERRAT_SEMI_BOLD, POPPINS_SEMI_BOLD } from '../styles/fonts';
 
 const LINKS = [
   {
-    name: 'Home',
-    link: '/'
+    name: 'Hacks',
+    link: '/hacks'
   },
   {
     name: 'What We Do',
@@ -29,8 +29,36 @@ const LINKS = [
 ];
 
 const NavBarText = styled(Navbar.Text)`
-  ${MONTSERRAT_SEMI_BOLD}
-  color: black;
+  ${POPPINS_SEMI_BOLD}
+  font-color: #000000;
+`;
+
+const StyledNavDropdown = styled(NavDropdown)`
+  &.dropdown {
+    position: static;
+  }
+  
+  .dropdown-toggle {
+    color: black;
+    padding: 0; // Adjust as necessary
+    &:hover, &:focus {
+      color: black;
+    }
+
+    /* If using Bootstrap's default caret, no need to set content for :after */
+    &:after {
+      content: none;
+    }
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    box-shadow: 0px 5px 6px #00000029;
+    border: 0;
+  }
 `;
 
 const NavText = ({ link, name, submenu }) => {
@@ -44,31 +72,31 @@ const NavText = ({ link, name, submenu }) => {
     setShowDropdown(false);
   };
 
-  const StyledNavDropdown = styled(NavDropdown)`
-  position: absolute;
-  left: -7rem;
-  transform: translateX(-50%);
-  top: 250%; // Adjust this value as needed to move the dropdown below the "Departments" link
-`;
-
   return (
-    <StyledLink
-      to={link}
-      style={{ position: 'relative', marginRight: '1.5rem', display: 'flex', alignItems: 'center' }} // Set position to relative
+    <div
+      style={{ position: 'relative', marginRight: '1.5rem', display: 'flex', alignItems: 'center' }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <NavBarText style={{ color: 'black', marginRight: '0.5rem' }}>{name}</NavBarText>
+      <StyledLink to={link}>
+        <NavBarText>{name}</NavBarText>
+      </StyledLink>
       {submenu && (
-        <StyledNavDropdown show={showDropdown} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        {submenu.map(item => (
-            <NavDropdown.Item key={item.link}>
-              <StyledLink to={item.link}>{item.name}</StyledLink>
+        <StyledNavDropdown
+          id={`dropdown-${name.toLowerCase()}`}
+          title=""
+          show={showDropdown}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          {submenu.map((item) => (
+            <NavDropdown.Item key={item.link} href={item.link}>
+              {item.name}
             </NavDropdown.Item>
           ))}
         </StyledNavDropdown>
       )}
-    </StyledLink>
+    </div>
   );
 };
 
@@ -82,12 +110,6 @@ const CollapseWrapper = styled(Navbar.Collapse)`
   }
 `;
 
-const StyledNavDropdown = styled(NavDropdown)`
-  position: absolute;
-  left: 0;
-  transform: translateX(-50%);
-  top: 100%; // Adjust this value as needed to move the dropdown below the "Departments" link
-`;
 
 export const NavBar = () => (
   <Navbar
@@ -105,7 +127,6 @@ export const NavBar = () => (
       </Navbar.Brand>
     </StyledLink>
     <Navbar.Toggle style={{ border: 'none' }}>
-      <img src="/menu.svg" alt="menu" />
     </Navbar.Toggle>
     <Navbar.Collapse className="justify-content-end">
       <CollapseWrapper>

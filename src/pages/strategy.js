@@ -188,7 +188,7 @@ const Teams = () => {
   // Filter members and projects by team 'Innovation Lab'
   const filteredTeams = allTeamJson.nodes.map(team => ({
     ...team,
-    members: team.members.filter(member => member.tags.includes("Strategy"))
+    members: team.members.filter(member => member.tags.includes("Strategy and Promotions"))
   })).filter(team => team.members.length > 0);
   const filteredProjects = allProjectsJson.nodes.filter(project =>
     project.team === "Strategy"

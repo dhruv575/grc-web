@@ -6,7 +6,7 @@
       {
         "name": "Zain Qureshi",
         "tags": ["Manager", "Business"],
-        "emoji": "🔥",
+        "emoji": "🤠",
         "from": "",
         "img": "../images/members/business/zain.jpg"
       },
@@ -19,7 +19,7 @@
       },
       {
         "name": "Irene Park",
-        "tags": ["Manager", "Strategy"],
+        "tags": ["Manager", "Strategy and Promotions"],
         "emoji": "🎯",
         "from": "",
         "img": "../images/members/business/strategy/irenepark.jpg"
@@ -33,17 +33,41 @@
       },
       {
         "name": "Sangeeta Quddus",
-        "tags": ["Manager", "Finance"],
+        "tags": ["Manager", "Finance and Accounting"],
         "emoji": "💼",
         "from": "",
         "img": "../images/members/business/finance/sangeeta.png"
-      },
+      }
+    ]
+  },
+  {
+    "name": "Senior Consultants",
+    "description": "Senior consultants head our advertising and sales efforts, leading the push to get new sponsors for the company",
+    "members": [
       {
         "name": "Erick Jarra",
-        "tags": ["Manager", "Consulting"],
+        "tags": ["Senior Consultant", "Consulting"],
         "emoji": "🔍",
         "from": "",
         "img": "../images/members/business/consulting/erick.png"
+      },
+      {
+        "name": "Ava Chen",
+        "tags": [
+          "Senior Consultant", "Consulting"
+        ],
+        "emoji": "\ud83d\udcc8",
+        "from": "",
+        "img": "../images/members/business/consulting/ava.jpg"
+      },
+      {
+        "name": "Arjun Khanna",
+        "tags": [
+          "Senior Consultant", "Consulting"
+        ],
+        "emoji": "\ud83d\udca1",
+        "from": "",
+        "img": "../images/members/business/consulting/arjun.jpg"
       }
     ]
   },
@@ -160,15 +184,6 @@
         "img": "../images/members/business/consulting/erin.jpg"
       },
       {
-        "name": "Ava Chen",
-        "tags": [
-          "Consulting"
-        ],
-        "emoji": "\ud83d\udcc8",
-        "from": "",
-        "img": "../images/members/business/consulting/ava.jpg"
-      },
-      {
         "name": "Jacqueline Errera",
         "tags": [
           "Consulting"
@@ -185,15 +200,6 @@
         "emoji": "\ud83d\udcca",
         "from": "",
         "img": "../images/members/business/consulting/hannah.jpg"
-      },
-      {
-        "name": "Arjun Khanna",
-        "tags": [
-          "Consulting"
-        ],
-        "emoji": "\ud83d\udca1",
-        "from": "",
-        "img": "../images/members/business/consulting/arjun.jpg"
       },
       {
         "name": "Gabriella Khaskelis",
@@ -270,7 +276,7 @@
       {
         "name": "Ingrid Li",
         "tags": [
-          "Finance"
+          "Finance and Accounting"
         ],
         "emoji": "\ud83d\udcb0",
         "from": "",
@@ -279,7 +285,7 @@
       {
         "name": "Nathaniel Sears",
         "tags": [
-          "Finance"
+          "Finance and Accounting"
         ],
         "emoji": "\ud83d\udcb0",
         "from": "",
@@ -288,7 +294,7 @@
       {
         "name": "Arya Bansal",
         "tags": [
-          "Finance"
+          "Finance and Accounting"
         ],
         "emoji": "\ud83d\udcb0",
         "from": "",
@@ -297,7 +303,7 @@
       {
         "name": "Nikki Liu",
         "tags": [
-          "Finance"
+          "Finance and Accounting"
         ],
         "emoji": "\ud83d\udcb0",
         "from": "",
@@ -306,7 +312,7 @@
       {
         "name": "Lisel Ndrecka",
         "tags": [
-          "Finance"
+          "Finance and Accounting"
         ],
         "emoji": "\ud83d\udcb0",
         "from": "",
@@ -315,7 +321,7 @@
       {
         "name": "Nitika Desai",
         "tags": [
-          "Finance"
+          "Finance and Accounting"
         ],
         "emoji": "\ud83d\udcb0",
         "from": "",
@@ -324,7 +330,7 @@
       {
         "name": "Isabella Turri",
         "tags": [
-          "Strategy"
+          "Strategy and Promotions"
         ],
         "emoji": "\ud83d\udcc8",
         "from": "",
@@ -333,7 +339,7 @@
       {
         "name": "Irene Kim",
         "tags": [
-          "Strategy"
+          "Strategy and Promotions"
         ],
         "emoji": "\ud83d\udcc8",
         "from": "",
@@ -342,7 +348,7 @@
       {
         "name": "Raelynn Cui",
         "tags": [
-          "Strategy"
+          "Strategy and Promotions"
         ],
         "emoji": "\ud83d\udcc8",
         "from": "",
@@ -351,7 +357,7 @@
       {
         "name": "Ahona Rana",
         "tags": [
-          "Strategy"
+          "Strategy and Promotions"
         ],
         "emoji": "\ud83d\udcc8",
         "from": "",
@@ -360,7 +366,7 @@
       {
         "name": "Sanaa Patel",
         "tags": [
-          "Strategy"
+          "Strategy and Promotions"
         ],
         "emoji": "\ud83d\udcc8",
         "from": "",
@@ -369,7 +375,7 @@
       {
         "name": "Sarah Usandivaras",
         "tags": [
-          "Strategy"
+          "Strategy and Promotions"
         ],
         "emoji": "\ud83d\udcc8",
         "from": "",
@@ -378,7 +384,7 @@
       {
         "name": "Zoe Champ",
         "tags": [
-          "Strategy"
+          "Strategy and Promotions"
         ],
         "emoji": "\ud83d\udcc8",
         "from": "",
@@ -387,7 +393,7 @@
       {
         "name": "Sophie-Anne Brouwers",
         "tags": [
-          "Strategy"
+          "Strategy and Promotions"
         ],
         "emoji": "\ud83d\udcc8",
         "from": "",
@@ -396,7 +402,7 @@
       {
         "name": "Tiffany Chen",
         "tags": [
-          "Strategy"
+          "Strategy and Promotions"
         ],
         "emoji": "\ud83d\udcc8",
         "from": "",
@@ -405,7 +411,7 @@
       {
         "name": "Carine Medellus",
         "tags": [
-          "Strategy"
+          "Strategy and Promotions"
         ],
         "emoji": "\ud83d\udcc8",
         "from": "",
@@ -414,7 +420,7 @@
       {
         "name": "Stephanie Skinner",
         "tags": [
-          "Strategy"
+          "Strategy and Promotions"
         ],
         "emoji": "\ud83d\udcc8",
         "from": "",
