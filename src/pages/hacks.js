@@ -73,6 +73,7 @@ const Title = styled.h2`
   text-align: center;
   margin-bottom: 1rem;
   font-size: 1.1rem;
+  padding: 0.5rem;
 `
 
 const RecruitmentDescription = s.p`
@@ -129,7 +130,7 @@ const List = s.ul`
   padding: 0rem 11rem;
   ${POPPINS_REGULAR}
   @media (max-width: 768px) {
-    padding 0rem 2rem; // Smaller font size for mobile responsiveness
+    padding 0rem 1rem; // Smaller font size for mobile responsiveness
   }
 `;
 

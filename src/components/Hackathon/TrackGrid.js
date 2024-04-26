@@ -48,7 +48,7 @@ const ContentGrid = () => {
   return (
     <GridContainer>
       <ContentBlock>
-        <Title>Tehcnical Track</Title>
+        <Title>Technical Track</Title>
         <Description>
             Design products which help solve a problem that affects some portion of the Penn population! 
             Use web design, artificial intelligence, or any other technology that you need to make some positive impact for the school.
