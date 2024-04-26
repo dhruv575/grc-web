@@ -124,8 +124,17 @@ const ImageWrapper = s.div`
   flex: 1;
 
   @media screen and (max-width: 768px) {
-    padding: 4rem 1rem;
+    padding: 1rem 1rem;
     text-align: center;
+  }
+`
+const FlexRow = s.div`
+  display: flex;
+  alignItems: center;
+  justifyContent: space-between
+
+  @media screen and (max-width: 768px) {
+    flexDirection: column;
   }
 `
 
@@ -186,7 +195,7 @@ const Teams = () => {
   return (
     <Container title="Analytics | ">
       <div style={{ marginTop: '2rem' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <FlexRow>
           <DescriptionWrapper>
             <PageTitle> Analytics </PageTitle>
             <PageDescription>
@@ -196,7 +205,7 @@ const Teams = () => {
           <ImageWrapper>
             <Img fluid={imageSharp.fluid} alt="Relevant Image" />
           </ImageWrapper>
-        </div>
+        </FlexRow>
         <ProjectsCarousel projects={filteredProjects} />
         {filteredTeams.map((team, idx) => (
           <SectionWrapper idx={idx}>

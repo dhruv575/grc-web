@@ -8,6 +8,10 @@ const GridContainer = styled.div`
   gap: 20px; // Space between grid items
   margin: 3rem; // Margin around the entire grid
   justify-content: center; // Centers grid items when they do not fill up a row
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; // Makes it a single column layout on smaller screens
+  }
 `;
 
 const ProjectCard = styled.div`

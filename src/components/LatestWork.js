@@ -21,6 +21,9 @@ import {
 
 const LatestWorkWrapper = styled.div`
   margin: 4rem 8rem; // Adjusted to 4rem on sides for symmetry
+  @media (max-width: 768px) {
+    margin: 1rem 1rem;
+  }
 `;
 
 const Title = styled.h2`

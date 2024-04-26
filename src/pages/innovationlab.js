@@ -129,6 +129,16 @@ const ImageWrapper = s.div`
   }
 `
 
+const FlexRow = s.div`
+  display: flex;
+  alignItems: center;
+  justifyContent: space-between
+
+  @media screen and (max-width: 768px) {
+    flexDirection: column;
+  }
+`
+
 const Teams = () => {
   const { allTeamJson, allProjectsJson, imageSharp } = useStaticQuery(graphql`
     query {
@@ -186,7 +196,7 @@ const Teams = () => {
   return (
     <Container title="Innovation Lab | ">
       <div style={{ marginTop: '2rem' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <FlexRow>
           <DescriptionWrapper>
             <PageTitle> Innovation Lab </PageTitle>
             <PageDescription>
@@ -196,7 +206,7 @@ const Teams = () => {
           <ImageWrapper>
             <Img fluid={imageSharp.fluid} alt="Relevant Image" />
           </ImageWrapper>
-        </div>
+        </FlexRow>
         <ProjectsCarousel projects={filteredProjects} />
         {filteredTeams.map((team, idx) => (
           <SectionWrapper idx={idx}>

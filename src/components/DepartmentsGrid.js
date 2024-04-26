@@ -6,10 +6,14 @@ import { MONTSERRAT_MEDIUM, PLAYFAIR_DISPLAY_LIGHT, PLAYFAIR_DISPLAY_REGULAR } f
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr); // Creates four columns
+  grid-template-columns: repeat(5, 1fr); // Creates five columns for wider screens
   gap: 20px; // Space between grid items
   margin: 1rem; // Margin around the entire grid
   justify-content: center; // Centers grid items when they do not fill up a row
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; // Use one column on small screens
+  }
 `;
 
 const ProjectCard = styled.div`

@@ -8,6 +8,11 @@ const GridContainer = styled.div`
   grid-template-rows: auto auto; // Two rows, size adjusts to content
   gap: 20px; // Space between grid items
   padding: 2rem 7rem; // Padding around the entire grid
+
+  @media (max-width: 768px) {
+    padding: 2rem 1rem; // Reduced padding for small screens
+    grid-template-columns: 1fr; // Makes it a single column layout on smaller screens
+  }
 `;
 
 const ContentBlock = styled.div`
