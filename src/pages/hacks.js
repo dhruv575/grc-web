@@ -13,13 +13,15 @@ import {
   LatestWork,
   Chevron,
   StyledLink,
-  StyledAnchor
+  StyledAnchor,
+  PageTitle
 } from '../components'
 import {
   POPPINS_BOLD,
   POPPINS_REGULAR,
   POPPINS_SEMI_BOLD,
   MONTSERRAT_REGULAR,
+  MONTSERRAT_LIGHT,
   PLAYFAIR_DISPLAY_SEMI_BOLD,
   PLAYFAIR_DISPLAY_LIGHT,
   PLAYFAIR_DISPLAY_REGULAR,
@@ -44,7 +46,8 @@ const Hero = s.div`
   animation: animateBg 10s linear infinite;
   background-image: radial-gradient(circle at center, #000000, #004d00, #008000, #000000);
   background-size: 400% 400%;
-  
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5); // This adds a slight shadow for depth
+
   @keyframes animateBg {
     0%, 100% { background-position: 50% 0%; }
     50% { background-position: 50% 100%; }
@@ -175,7 +178,55 @@ const SectionTitle = styled.h2`
     font-size: 1.5rem; // Smaller font size for mobile responsiveness
   }
 `;
+
+const PageDescription = s.p`
+  ${MONTSERRAT_LIGHT}
+  margin-top: 2rem;
+`
+
+const DescriptionWrapper = s.div`
+  padding: 3rem 7rem;
+  flex: 1;
+
+  @media screen and (max-width: 768px) {
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+`
+const ImageWrapper = s.div`
+  padding: 3rem 3rem;
+  flex: 1;
+
+  @media screen and (max-width: 768px) {
+    padding: 4rem 1rem;
+    text-align: center;
+    display: none; /* Hide the image on small screens */
+  }
+`
+const FlexRow = s.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
 const Index = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "pcs.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Container title="Hacks | ">
       <Hero>
@@ -218,8 +269,25 @@ const Index = () => {
         </List>
         {/* ... more content ... */}
       </FormatSection>
-      <SectionTitle>Partner Organizations</SectionTitle>
-      <PartnersRow />
+      <FlexRow>
+        <DescriptionWrapper>
+          <SectionTitle>Example Project</SectionTitle>
+          <PageDescription>
+          Penn Course Search uses Natural Language Search to give Penn students truly comprehensive and detailed course recommendations. 
+          It allows students to effectively search for and find classes that suit their interests without having to search through Path@Penn. 
+          </PageDescription>
+          <PageDescription>
+          Penn Course Search is an artificial intelligence model using vector embedding, natural language processing, semantic search, and web development in React to fulfill needs for students on campus.
+          </PageDescription>
+        </DescriptionWrapper>
+        <ImageWrapper>
+          <Img fluid={data.file.childImageSharp.fluid} alt="Relevant Image" />
+        </ImageWrapper>
+      </FlexRow>
+      <FormatSection>
+        <SectionTitle>Our Partners</SectionTitle>
+        <PartnersRow />
+      </FormatSection>
     </Container>
   )
 }
