@@ -238,7 +238,7 @@ const Index = () => {
       </Hero>
       <SectionTitle> FORMAT </SectionTitle>
       <Title> 
-        DP Hacks will kick off whit an in-person event on Saturday, September 21 and culminating with presentations and judging on September 28th
+        DP Hacks will kick off with an in-person event on Saturday, September 21 and culminating with presentations and judging on September 28th
       </Title>
       <ContentGrid />
       <PrizesGrid />
@@ -249,7 +249,7 @@ const Index = () => {
           <ListItem>All Penn students are welcome to enter either track of DP Hacks, regardless of previous experience. Technical and Pitch development workshops will be provided throughout the week of the hackathon.</ListItem>
           <ListSpacer />
           <ListItem><strong>Registration</strong></ListItem>
-          <ListItem>Teams will be made of between 2-5 students. Registration is on a first-come, first-served basis, with the first 20 teams to register for each track being prioritized, and additional teams being promoted off the waitlist if opportunities arise. </ListItem>
+          <ListItem>Teams will be made of between 3-5 students. Registration is on a first-come, first-served basis, with the first 20 teams to register for each track being prioritized, and additional teams being promoted off the waitlist if opportunities arise. </ListItem>
           <ListItem />
           <ListItem>Teams must consist only of currently enrolled University of Pennsylvania students, and each student can compete in either the technical track OR the pitch track.</ListItem>
           <ListSpacer />
