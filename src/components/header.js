@@ -6,8 +6,8 @@ export const Header = ({ title = '' }) => (
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Landing page of the DP Business team that showcases our projects and team members." />
-    <title>{`${title}DP Business`}</title>
+    <meta name="description" content="Landing page of Wharton GRC that showcases our projects and team members." />
+    <title>{`${title}Wharton GRC`}</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -16,33 +16,33 @@ export const Header = ({ title = '' }) => (
 
     <meta
       property="og:title"
-      content="DP Business"
+      content="Wharton GRC"
     />
     <meta
       property="og:image"
-      content="https://i.ibb.co/HtsY5Sy/logo-rect.png"
+      content="https://i.ibb.co/2K24q79/logo-rect.png"
     />
-    <meta property="og:description" content="Landing page of the DP Business team that showcases our projects and team members" />
+    <meta property="og:description" content="Landing page of Wharton GRC that showcases our projects and team members" />
     <meta
       property="og:url"
-      content="https://business.thedp.com/"
+      content="https://whartongrc.org/"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="DP Business"
+      content="Wharton GRC"
     />
     <meta
       name="twitter:image"
-      content="https://i.ibb.co/HtsY5Sy/logo-rect.png"
+      content="https://i.ibb.co/2K24q79/logo-rect.png"
     />
-    <meta name="twitter:description" content="Landing page of the DP Business team that showcases our projects and team members" />
+    <meta name="twitter:description" content="Landing page of the Wharton GRC team that showcases our projects and team members" />
     <meta
       name="twitter:url"
-      content="https://business.thedp.com/"
+      content="https://whartongrc.org/"
     />
-    <meta name="twitter:site" content="@dailypenn"></meta>
+    <meta name="twitter:site" content="@whartongrc"></meta>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

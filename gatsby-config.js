@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'DP Business'
+    title: 'Wharton GRC'
   },
   plugins: [
     `gatsby-transformer-json`,

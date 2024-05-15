@@ -7,7 +7,7 @@ export const Badge = s.span`
   background-color: ${({ bgColor = BLUE_PERCENT(0.1) }) => bgColor};
   ${POPPINS_REGULAR}
   border-radius: 5px;
-  width: 7rem;
+  width: 9rem;
   padding: 0.2rem 0.5rem;
   color: black;
   font-size: 90%;

@@ -16,31 +16,31 @@ const LeftSections = [
     link: '/'
   },
   {
-    title: 'What We Do',
+    title: 'Team',
     link: '/team'
   },
   {
-    title: 'Departments',
+    title: 'Projects',
     link: '/departments'
   }
 ]
 
 const RightSections = [
   {
-    title: 'The Daily Pennsylvanian',
+    title: 'Partner with GRC',
     link: 'https://www.thedp.com/'
   },
   {
-    title: '34th Street Magazine',
-    link: 'https://www.34st.com/'
+    title: 'LinkedIn',
+    link: 'https://www.linkedin.com/company/grcglobalgroup/'
   },
   {
-    title: 'Under the Button',
-    link: 'https://www.underthebutton.com/'
+    title: 'Facebook',
+    link: 'https://www.facebook.com/whartongrc/'
   },
   {
-    title: 'Donate to the DP',
-    link: 'https://www.classy.org/give/506065/#!/donation/checkout'
+    title: 'Instagram',
+    link: 'https://www.instagram.com/grc_wharton/'
   }
 ]
 
@@ -51,7 +51,7 @@ const StyledRow = s(Row)`
 
 const LeftCol = s(Col)`
   border-right: 1px solid rgba(224,224,224,0.5);
-
+  margin-left: 14rem;
   @media screen and (max-width: 768px) {
     border-right: none;
     border-bottom: 1px solid rgba(224,224,224,0.5);
@@ -60,7 +60,7 @@ const LeftCol = s(Col)`
 `
 
 const RightCol = s(Col)`
-  margin-left: 2rem;
+  margin-left: rem;
 
   @media screen and (max-width: 768px) {
     margin-left: 0;
@@ -95,8 +95,10 @@ export const Footer = () => (
   <StyledRow>
     <ColWithMargin md={6}>
       <FooterText>
-        Made with 💖 by DP Business (Droov) <br /> &copy; The Daily
-        Pennsylvanian 2024
+        Made by the devs at GRC <br /> &copy; Wharton GRC 2024
+      </FooterText>
+      <FooterText>
+      wharton@grcglobalgroup.com
       </FooterText>
       <StyledLink to="/apply">
         <ApplyButton> APPLY </ApplyButton>

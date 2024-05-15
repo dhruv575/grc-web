@@ -22,11 +22,5 @@
     "description": "The Consulting team develops strategic advertising campaigns and produces pitch materials for advertising and sponsorship sales for The Daily Pennsylvanian Inc. DP Consultants work to build relationships with local and national business to help them better reach the Penn audience through partnerships with the DP. ",
     "img": "../images/board/consulting.png",
     "link": "/consulting"
-  },
-  {
-    "name": "Analytics",
-    "description": "DP Analytics is the data science and business analytics hub of the Daily Pennsylvanian. The Analytics department leverages modern tools and technologies to enhance the digital and data analytics capabilities of the DP. DP Analytics staffers work on projects with direct impact on the DP, the Penn community, and a global readership audience.",
-    "img": "../images/board/analytics.png",
-    "link": "/analytics"
   }
 ]

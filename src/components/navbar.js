@@ -1,101 +1,33 @@
-import React, { useState } from 'react';
-import { Navbar, NavDropdown } from 'react-bootstrap';
+import React from 'react';
+import { Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 
 import { StyledLink } from './typography';
 import { ApplyButtonNav } from './badge';
-import { MONTSERRAT_SEMI_BOLD, POPPINS_SEMI_BOLD } from '../styles/fonts';
+import { POPPINS_SEMI_BOLD } from '../styles/fonts';
 
 const LINKS = [
   {
-    name: 'Hacks',
-    link: '/hacks'
-  },
-  {
-    name: 'What We Do',
+    name: 'Team',
     link: '/team'
   },
   {
-    name: 'Departments',
-    link: '/departments',
-    submenu: [
-      { name: 'Innovation Lab', link: '/innovationlab' },
-      { name: 'S&P', link: '/strategy' },
-      { name: 'Finance', link: '/finance' },
-      { name: 'Analytics', link: '/analytics' },
-      { name: 'Consulting', link: '/consulting' }
-    ]
+    name: 'Projects',
+    link: '/projects'
   }
 ];
 
 const NavBarText = styled(Navbar.Text)`
+  color: #3DB2C1;
   ${POPPINS_SEMI_BOLD}
-  font-color: #000000;
 `;
 
-const StyledNavDropdown = styled(NavDropdown)`
-  &.dropdown {
-    position: static;
-  }
-  
-  .dropdown-toggle {
-    color: black;
-    padding: 0; // Adjust as necessary
-    &:hover, &:focus {
-      color: black;
-    }
-
-    /* If using Bootstrap's default caret, no need to set content for :after */
-    &:after {
-      content: none;
-    }
-  }
-
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 0.5rem;
-    box-shadow: 0px 5px 6px #00000029;
-    border: 0;
-  }
-`;
-
-const NavText = ({ link, name, submenu }) => {
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  const handleMouseEnter = () => {
-    setShowDropdown(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowDropdown(false);
-  };
-
+const NavText = ({ link, name }) => {
   return (
-    <div
-      style={{ position: 'relative', marginRight: '1.5rem', display: 'flex', alignItems: 'center' }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <div style={{ marginRight: '1.5rem', display: 'flex', alignItems: 'center' }}>
       <StyledLink to={link}>
         <NavBarText>{name}</NavBarText>
       </StyledLink>
-      {submenu && (
-        <StyledNavDropdown
-          id={`dropdown-${name.toLowerCase()}`}
-          title=""
-          show={showDropdown}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          {submenu.map((item) => (
-            <NavDropdown.Item key={item.link} href={item.link}>
-              {item.name}
-            </NavDropdown.Item>
-          ))}
-        </StyledNavDropdown>
-      )}
     </div>
   );
 };
@@ -109,7 +41,6 @@ const CollapseWrapper = styled(Navbar.Collapse)`
     flex-direction: column;
   }
 `;
-
 
 export const NavBar = () => (
   <Navbar
@@ -126,8 +57,7 @@ export const NavBar = () => (
         <img src="/logo-rect.png" height="70" alt="logo" />
       </Navbar.Brand>
     </StyledLink>
-    <Navbar.Toggle style={{ border: 'none' }}>
-    </Navbar.Toggle>
+    <Navbar.Toggle style={{ border: 'none' }} />
     <Navbar.Collapse className="justify-content-end">
       <CollapseWrapper>
         {LINKS.map(link => (
@@ -140,3 +70,5 @@ export const NavBar = () => (
     </Navbar.Collapse>
   </Navbar>
 );
+
+export default NavBar;

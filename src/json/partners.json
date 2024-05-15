@@ -1,14 +1,14 @@
 [
     {
-        "name": "Daily Pennsylvanian",
-        "img": "../images/partnerLogos/dp-logo.png"
+        "name": "GRC Global",
+        "img": "../images/partnerLogos/grc-logo.png"
     },
     {
-        "name": "Under the Button",
-        "img": "../images/partnerLogos/utb.png"
+        "name": "University of Pennsylvania",
+        "img": "../images/partnerLogos/penn-logo.png"
     },
     {
-        "name": "34th Street",
-        "img": "../images/partnerLogos/34st.jpg"
+        "name": "LEK Consulting",
+        "img": "../images/partnerLogos/lek.png"
     }
 ]

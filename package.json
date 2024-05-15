@@ -1,9 +1,9 @@
 {
-  "name": "dp-business-website",
+  "name": "wharton-grc-website",
   "version": "1.0.0",
   "private": true,
-  "description": "DP Business Website",
-  "author": "DP Business",
+  "description": "Wharton GRC Website",
+  "author": "Wharton GRC",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
