@@ -20,7 +20,7 @@ const CardWrapper = s.div`
   margin-right: 1rem;
 
   :hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
   }
   transition: all 0.3s;
   overflow: hidden;
@@ -63,7 +63,6 @@ const CardDescriptionBold = s.span`
 `;
 
 const MemberImg = s(Img)`
-  border-radius: 50%;
   margin: auto;
   border: 5px solid ${RED};
 `;
@@ -129,9 +128,9 @@ const TeamDescription = s.p`
 `;
 
 const PageDescription = s.p`
-  ${PLAYFAIR_DISPLAY_MEDIUM}
+  ${POPPINS_LIGHT}
   margin-top: 2rem;
-  padding: 0 25rem;
+  padding: 0 15rem;
 
   @media screen and (max-width: 992px) {
     padding: 0 10rem;

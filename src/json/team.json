@@ -1,60 +1,67 @@
 [
   {
     "name": "Presidents",
-    "description": "The presidents head the development of all new DP projects and collaborate with other Daily Pennsylvanian teams, from editors to designers, in order to integrate them seamlessly.",
+    "description": "The presidents lead the club, sourcing opportunities for students, setting the vision for GRC, and running most meetings for the team and board.",
     "members": [
       {
         "name": "Julian Ward",
         "tags": ["President", "Wharton"],
         "major": "Finance",
         "projects": "Amazon, NASA",
-        "img": "../images/members/business/zain.jpg"
+        "img": "../images/members/board/julian.jpg"
       },
       {
         "name": "Richard Liu",
         "tags": ["President", "Wharton"],
-        "major": "ESG Studies",
+        "major": "Finance",
         "projects": "Microsoft, Cocacola",
-        "img": "../images/members/business/analytics/edward.jpg"
+        "img": "../images/members/board/richard.jpg"
       }
     ]
   },
   {
     "name": "Vice Presidents",
-    "description": "Vice Presidents head our advertising and sales efforts, leading the push to get new sponsors for the company",
+    "description": "Vice Presidents head individal efforts, leading the club's curriculum design, external relations, internal opportunities, consulting groups, and finances.",
     "members": [
       {
         "name": "Dhruv Gupta",
         "tags": ["VP of Finance", "SEAS"],
         "major": "Artificial Intelligence",
         "projects": "Philabundance, CVS",
-        "img": "../images/members/business/innovation/dhruv.jpg"
+        "img": "../images/members/board/dhruv.jpg"
       }
     ]
   },
   {
     "name": "Project Leads",
-    "description": "The project leads are behind all the business projects at The Daily Pennsylvanian, conducting the entrepreunerial work, marketing, analytics, and business development necessary to ensure constant innovation at the DP!",
+    "description": "The project leads each work closely with clients to ensure a successful experience both for the consultants and the companies they advise.",
     "members": [
       {
-        "name": "Alison Yau",
-        "tags": ["PL of Philabundance", "Wharton"],
-        "major": "Statistics",
-        "projects": "Philabundance, Mayo Clinic",
-        "img": "../images/members/business/innovation/ananya.jpg"
+        "name": "Adam Sutter",
+        "tags": ["PL", "Wharton"],
+        "major": "BEPP, Finance",
+        "projects": "Global Center for Maritime Decarbonization, Global Delta Capital",
+        "img": "../images/members/board/adam.JPG"
+      },
+      {
+        "name": "Frank Ma",
+        "tags": ["PL", "Wharton"],
+        "major": "Finance, Statistics, Computer Science",
+        "projects": "Global Center for Maritime Decarbonization, Global Delta Capital",
+        "img": "../images/members/board/frank.jpeg"
       }
     ]
   },
   {
     "name": "Consultants",
-    "description": "The consultants consult!",
+    "description": "The consultants are the heart of GRC, providing well-researched and exhaustive solutions to the variety of issues companies bring to us.",
     "members": [
       {
-        "name": "Daniel Price",
-        "tags": ["Consultant", "SEAS"],
-        "major": "Computer Science",
+        "name": "Su-Yeon Lee",
+        "tags": ["Consultant", "SEAS", "Wharton"],
+        "major": "Computer Science, Finance",
         "projects": "Philabundance",
-        "img": "../images/members/business/innovation/emre.jpg"
+        "img": "../images/members/consultants/yeon.jpg"
       }
     ]
   }

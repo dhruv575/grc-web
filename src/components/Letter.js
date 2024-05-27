@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import image1 from '../images/members/business/zain.jpg'; // Path to the first image
-import image2 from '../images/members/business/zain.jpg'; // Path to the second image
+import image1 from '../images/members/board/richard.jpg'; // Path to the first image
+import image2 from '../images/members/board/julian.jpg'; // Path to the second image
 import { PLAYFAIR_DISPLAY_MEDIUM } from '../styles/fonts';
 
 const Container = styled.div`
@@ -120,26 +120,27 @@ const LetterFromPresidents = () => {
         image={image1}
         name="Richard Liu"
         role="GRC President"
-        email="rliu@wharton.upenn.edu"
+        email="rliu2004@wharton.upenn.edu"
         letterText={[
-          "I’m excited to welcome you to the Daily Pennsylvanian’s Business Department website.",
-          "Since 1885, the DP has held an important role on-campus as the University of Pennsylvania’s student newspaper. As the leading independent student media organization at Penn, The Daily Pennsylvanian, Inc. seeks to inform and drive conversation while providing enduring student experiences in journalism, business, and leadership. DP Business exists to support the DP in its mission, and to ensure the company has a strong financial standing.",
-          "Within the DP Business departments, we seek to foster a collaborative, engaging, and inclusive community that is committed to supporting student media and journalism. With a team of 45 students across three undergraduate schools, DP Business offers students the opportunity to work for an independent, functioning company. I invite you all to learn more about us through our website and the DP’s social media. Please reach out to my email qureshi@thedp.com if you have any questions.",
-          "I hope to see you in the office,",
-          "Richard Liu",
+          "Welcone to GRC Wharton!",
+          "Since 2016, GRC Wharton has played a crucial role in driving global social impact and empowering future leaders. As a leading student-run organization, we aim to inform and inspire while providing valuable experiences in business, leadership, and social responsibility. GRC Business supports our mission by ensuring strong financial health and growth.",
+          "Within GRC, we foster a collaborative, engaging, and inclusive community dedicated to supporting impactful projects. With a diverse team of students, GRC offers the opportunity to work for an independent, dynamic organization.",
+          "I hope to see you join the team,",
+          "Richard Liu"
         ]}
       />
       <Letter
         image={image2}
         name="Julian Ward"
         role="GRC President"
-        email="julian@wharton.upenn.edu"
+        email="jward18@wharton.upenn.edu"
         letterText={[
-          "Welcome to the new Business Department website.",
-          "The DP has been a cornerstone of the Penn community since 1885. As the premier student-run media organization at Penn, we strive to inform, engage, and create meaningful student experiences in journalism, business, and leadership. The Business department supports the DP's mission by ensuring financial stability and growth.",
-          "Our department values collaboration, inclusivity, and innovation. With a diverse team of students from various undergraduate schools, we provide unique opportunities to work in a dynamic and independent company. Explore our website and connect with us on social media. For any inquiries, feel free to email me at another@thedp.com.",
+          "Hey Future GRCer!",
+          "The GRC Wharton branch, established in 2016, is dedicated to driving global social impact and empowering future leaders. We have completed over 140 projects with clients like UNESCO, Microsoft, and the World Bank.",
+          "Our team values collaboration, inclusivity, and innovation. We offer unique opportunities to work on impactful projects across education, global health, sustainability, and more.",
+          "Explore our website and connect with us on social media. For any inquiries, feel free to email me at jward18@wharton.upenn.edu.",
           "Looking forward to seeing you,",
-          "Julian Ward",
+          "Julian Ward"
         ]}
       />
     </Container>

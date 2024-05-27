@@ -11,7 +11,7 @@ import {
   PageDescription,
   StyledAnchor
 } from '../components'
-import { MONTSERRAT_LIGHT, PLAYFAIR_DISPLAY_MEDIUM, POPPINS_MEDIUM, POPPINS_REGULAR } from '../styles/fonts'
+import { MONTSERRAT_LIGHT, PLAYFAIR_DISPLAY_MEDIUM, POPPINS_LIGHT, POPPINS_MEDIUM, POPPINS_REGULAR } from '../styles/fonts'
 import { BLUE_PERCENT, RED_PERCENT, BLUE, RED } from '../styles/constants'
 
 const WHITE = `#FFFFFF`
@@ -75,7 +75,7 @@ const getBgColor = (idx, color0, color1) => {
 
 const ImgWrapper = s.div`
   background-color: ${({ idx }) =>
-    getBgColor(idx, BLUE_PERCENT(0.1), RED_PERCENT(0.32))};
+    getBgColor(idx, '#1e3a8a', '#3DB2C1')};
   padding: 2rem 0;
 `
 
@@ -98,7 +98,7 @@ const CardContent = ({ name, link, description, img, idx }) => (
     <Content>
       <p style={{ paddingRight: '1rem' }}>{description} </p>
       <Chevron
-        bgColor={getBgColor(idx, BLUE, RED)}
+        bgColor={getBgColor(idx, '#1e3a8a', '#3DB2C1')}
         color={WHITE}
         floatRight
         link={link}
@@ -122,6 +122,7 @@ const StyledRow = s(Row)`
 `
 
 const StyledPageDescription = s(PageDescription)`
+  ${POPPINS_LIGHT}
   padding-right: 2rem;
 
   @media (max-width: 992px) {
@@ -164,7 +165,7 @@ const Projects = () => {
         <Col lg={4}>
           <PageTitle> Our Projects </PageTitle>
           <StyledPageDescription>
-          DP Business consists of five departments dedicated to preserving the reach and financial success of The Daily Pennsylvanian, Inc. Students can apply to the Strategy & Promotion, Innovation Lab, Consulting, Finance & Accounting, and Analytics departments. These teams offer the unique opportunity of providing practical work experience to students and a chance to apply business strategies and tools to improve an independent, functioning media company. DP Business also provides an engaging community, emphasizing collaboration across editorial and business departments. For more information about our media products, check out our&nbsp;
+          Consultants at the Wharton branch of the Global Research and Consulting Group (GRC) engage in pro-bono consulting projects aimed at driving social good. They work with a diverse range of clients, including global non-profits, social impact startups, and governmental organizations, to help them achieve their goals. The projects span various sectors such as education, global health, and sustainability, providing strategic advice and innovative solutions. By participating in these projects, Wharton GRC consultants not only contribute to meaningful global change but also gain valuable experience in consulting and leadership. The Wharton GRC team is dedicated to empowering students to give back to the global community while fostering a collaborative and inclusive environment.
             <StyledAnchor href="https://thedp.com" target="_blank">
               website.
             </StyledAnchor>

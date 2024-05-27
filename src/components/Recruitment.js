@@ -11,14 +11,9 @@ const RecruitmentRow = styled.div`
   flex-wrap: wrap;
   margin: 2rem 0;
   animation: animateBg 20s linear infinite;
-  background-image: linear-gradient(30deg, #e0f7fa, #b3e5fc, #81d4fa, #4fc3f7);
+  background-color: #3DB2C1;
   background-size: 400% 400%;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-
-  @keyframes animateBg {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-  }
 
   @media (max-width: 768px) {
     padding: 2rem;
@@ -95,7 +90,7 @@ const Recruitment = () => {
           <LeftColWrapper>
             <RecruitmentTitle> We're Recruiting! </RecruitmentTitle>
             <RecruitmentDescription>
-              The Daily Pennsylvanian is a $3-million, student-run media organization. Our incredible teams work together to market our products and sustain our business. Through the DP, students experience working for a real company, with real staffers, clients, and revenues. Join one of our teams to gain an invaluable, hands-on experience unlike any other.
+                The Global Research and Consulting (GRC) Group at Wharton is a dynamic, student-run organization with a mission to drive global social impact and empower future leaders. Our talented teams collaborate to deliver innovative solutions for esteemed clients such as UNESCO, Microsoft, World Bank, Wikipedia, Oxfam, and WWF. By joining GRC Wharton, students gain invaluable, hands-on experience working on real-world projects across key markets like China, Africa, India, and the US. Our focus areas include education, global health, impact investing, development, sustainability, and analytics. Become a part of GRC Wharton to enhance your professional skills and make a meaningful impact on a global scale.
             </RecruitmentDescription>
             <ApplyButton
               href="https://docs.google.com/forms/d/e/1FAIpQLSeduPvGWySAkxCWQwdrvpvSppx2455xjNRh1yi4aCn_lJnQ2Q/viewform"

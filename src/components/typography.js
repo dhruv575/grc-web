@@ -14,9 +14,9 @@ export const PageTitle = s.h1`
 `
 
 export const PageDescription = s.p`
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-top: 2rem;
-  ${MONTSERRAT_REGULAR}
+  ${POPPINS_REGULAR}
 `
 
 export const StyledLink = s(Link)`

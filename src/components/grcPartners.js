@@ -11,14 +11,8 @@ const PartnersContainer = styled.div`
     margin-top: 2rem;
 
     animation: animateBg 20s linear infinite;
-    background-image: linear-gradient(30deg, #e0f7fa, #b3e5fc, #81d4fa, #4fc3f7);
-    background-size: 400% 400%;
+    background-color: #3DB2C1;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-  
-    @keyframes animateBg {
-      0%, 100% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-    }
   
     @media (max-width: 768px) {
       padding: 2rem;
@@ -70,7 +64,7 @@ const PartnerScroll = () => {
 
     return (
         <PartnersContainer>
-            <Title>Our Partners</Title>
+            <Title>Our Corporate Partners</Title>
             <PartnersScrollContainer>
                 {data.allPartnersJson.edges.map(({ node }) => (
                     <div key={node.name}>
