@@ -37,12 +37,20 @@ import {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 
     height: 47rem;
+    @media (max-width: 768px) {
+      height: auto;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
   `
   
   const HelloWorld = s.h1`
     ${PLAYFAIR_DISPLAY_MEDIUM}
     font-size: 6rem;
     margin-top: -1rem;
+    @media (max-width: 768px) {
+      font-size: 4rem
+    }
   `
   
   const Checkout = s.p`
@@ -67,7 +75,7 @@ const Heroism = () => {
     return (
       <Heroic bgImage={heroImage}>
         <HelloWorld> Wharton GRC </HelloWorld>
-        <span role="emoji" style={{ fontSize: '3rem', magrinTop: '-2rem' }}>
+        <span role="emoji" style={{ fontSize: '2rem', magrinTop: '-2rem' }}>
         INSIGHTS FOR IMPACT
         </span>
         <StyledLink to="/projects">

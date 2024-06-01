@@ -26,7 +26,7 @@ const CardWrapper = s.div`
   overflow: hidden;
 
   @media screen and (max-width: 768px) {
-    padding: 2rem 0;
+    padding: 1rem 1rem;
     margin: 1rem 0.5rem;
   }
 `;
@@ -36,6 +36,7 @@ const CardTitle = s.p`
   ${POPPINS_BOLD}
   color: #000;
   @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
     margin-top: 1rem;
   }
 `;
@@ -45,6 +46,9 @@ const CardMajor = s.p`
   margin-top: -1rem;
   ${POPPINS_LIGHT}
   color: #000;
+  @media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const CardTags = s.div`
@@ -55,6 +59,10 @@ const CardDescription = s.div`
   ${POPPINS_LIGHT}
   margin-top: 2rem;
   color: #000;
+  @media screen and (max-width: 768px) {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
 `;
 
 const CardDescriptionBold = s.span`
@@ -106,7 +114,7 @@ const SectionWrapper = s.div`
 const Members = ({ members }) => (
   <Row>
     {members.map(member => (
-      <Col lg={4} key={member.name}>
+      <Col lg={4} md={6} key={member.name} className="mb-4">
         <Card {...member} />
       </Col>
     ))}
@@ -115,6 +123,9 @@ const Members = ({ members }) => (
 
 const TeamTitle = s.h2`
   ${MONTSERRAT_BOLD}
+  @media screen and (max-width: 768px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const TeamDescription = s.p`
@@ -124,6 +135,7 @@ const TeamDescription = s.p`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    font-size: 1rem;
   }
 `;
 
@@ -138,6 +150,7 @@ const PageDescription = s.p`
 
   @media screen and (max-width: 667px) {
     padding: 0 1rem;
+    font-size: 0.9rem;
   }
 `;
 

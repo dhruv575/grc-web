@@ -25,6 +25,9 @@ const Title = styled.h2`
   font-size: 4rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const ProjectsContainer = styled.div`
@@ -68,6 +71,7 @@ const ProjectPair = styled.div`
   margin-left: 1rem;
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 1rem;
   }
 `;
 
@@ -88,13 +92,18 @@ const ProjectContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    padding: 1rem;
+    margin: 0.5rem 0;
   }
 `;
 
 const ImageContainer = styled.div`
   flex: 0 0 150px;
   margin-right: 1.5rem;
+  @media (max-width: 768px) {
+    flex: 0 0 100px;
+    margin-right: 1rem;
+  }
   img {
     border-radius: 10px;
   }
@@ -107,14 +116,20 @@ const ProjectInfo = styled.div`
 const ProjectName = styled.h2`
   ${POPPINS_LIGHT}
   margin-top: 0;
-  fint-size: 1rem;
+  font-size: 1.2rem;
   color: #ffffff;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const ProjectDescription = styled.p`
   ${POPPINS_LIGHT}
   font-size: 0.9rem;
   color: #d3d3d3;
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const LatestWork = () => {
@@ -153,7 +168,7 @@ export const LatestWork = () => {
             {pair.map(({ node }, subIndex) => (
               <ProjectContainer key={subIndex}>
                 <ImageContainer>
-                  <Img fluid={node.img.childImageSharp.fluid} />
+                  <Img fluid={node.img.childImageSharp.fluid} alt={node.name} />
                 </ImageContainer>
                 <ProjectInfo>
                   <ProjectName>{node.name}</ProjectName>

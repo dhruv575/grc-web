@@ -1,8 +1,8 @@
-import React from 'react'
-import s from 'styled-components'
-import { Row, Col } from 'react-bootstrap'
-import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import React from 'react';
+import s from 'styled-components';
+import { Row, Col } from 'react-bootstrap';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import {
   Container,
@@ -11,14 +11,15 @@ import {
   PageDescription,
   Chevron,
   StyledAnchor
-} from '../components'
-import { BLUE_PERCENT, RED, BLUE, WHITE } from '../styles/constants'
-import { POPPINS_BOLD, POPPINS_SEMI_BOLD } from '../styles/fonts'
+} from '../components';
+import { BLUE_PERCENT, RED, BLUE, WHITE } from '../styles/constants';
+import { POPPINS_BOLD, POPPINS_SEMI_BOLD } from '../styles/fonts';
 
 const Wrapper = s.div`
   background-color: ${BLUE_PERCENT(0.04)};
   padding: 3rem 0;
-`
+`;
+
 const SectionTitle = s.h1`
   ${POPPINS_SEMI_BOLD}
   font-size: 2.8rem;
@@ -26,7 +27,7 @@ const SectionTitle = s.h1`
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;
   }
-`
+`;
 
 const IFrameWrapper = s.div`
   margin: auto;
@@ -39,7 +40,7 @@ const IFrameWrapper = s.div`
   @media (max-width: 768px) {
     width: 90%;
   }
-`
+`;
 
 const ImgWrapper = s.div`
   background-color: ${RED};
@@ -49,11 +50,11 @@ const ImgWrapper = s.div`
   @media (max-width: 992px) {
     margin-top: 2rem;
   }
-`
+`;
 
 const roles = [
   'Consulting'
-]
+];
 
 const StyledRow = s(Row)`
   margin: 5rem 0;
@@ -62,22 +63,27 @@ const StyledRow = s(Row)`
   text-align: center;
 
   @media (max-width: 768px) {
+    margin: 2rem 0;
     padding-left: 1rem;
     padding-right: 1rem;
   }
-`
+`;
 
 const SectionWrapper = s.div`
   margin-top: 1rem;
   padding: 2rem 9rem;
   border-top: 4px solid ${BLUE_PERCENT(0.1)};
-`
+
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
+`;
 
 const ApplyHere = s.span`
   ${POPPINS_BOLD}
   color: ${RED};
   margin-left: 0.3rem;
-`
+`;
 
 const Recruitment = ({ open }) => {
   const { imageSharp } = useStaticQuery(graphql`
@@ -167,7 +173,7 @@ const Recruitment = ({ open }) => {
         </div>
       </SectionWrapper>
     </>
-  )
+  );
 }
 
 const Apply = () => {
@@ -179,11 +185,6 @@ const Apply = () => {
       {recruiting ? (
         <Container title="Apply | ">
           <Recruitment open={true}/>
-          {/* <Wrapper>
-            <IFrameWrapper>
-              <iframe className="application-embed" src="https://docs.google.com/forms/d/e/1FAIpQLSdshBhPBctwHmt52D1iUAcv_f0OVKUqM3RXiCJCvyvBojYk0A/closedform" frameBorder="0" onMouseWheel="" width="100%" height="600" style={{ background: "transparent", border: "1px solid #ccc" }}></iframe>
-            </IFrameWrapper>
-          </Wrapper> */}
         </Container>
       ) : (
         <Container title="Apply | ">
@@ -191,7 +192,7 @@ const Apply = () => {
         </Container>
       )}
     </>
-  )
+  );
 }
 
-export default Apply
+export default Apply;
