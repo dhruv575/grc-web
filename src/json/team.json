@@ -13,8 +13,8 @@
       {
         "name": "Richard Liu",
         "tags": ["President", "Wharton"],
-        "major": "Finance",
-        "projects": "Microsoft, Cocacola",
+        "major": "Finance, Social Impact",
+        "projects": "Amor Bueno",
         "img": "../images/members/board/richard.jpg"
       }
     ]
@@ -29,6 +29,76 @@
         "major": "Artificial Intelligence",
         "projects": "Philabundance, CVS",
         "img": "../images/members/board/dhruv.jpg"
+      },
+      {
+        "name": "Evan Zheng",
+        "tags": [
+          "VP of Consulting",
+          "CAS"
+        ],
+        "majors": "Cognitive Science, Computer Science",
+        "projects": "Pepsico., Climate Group",
+        "img": "../images/members/board/evan.jpg"
+      },
+      {
+        "name": "Hannah Kim",
+        "tags": [
+          "VP of Internal",
+          "CAS"
+        ],
+        "majors": "Economics",
+        "projects": "CVS Health, Climate Group",
+        "img": "../images/members/boaes/hannahk.jpg"
+      },
+      {
+        "name": "Jean Chua",
+        "tags": [
+          "VP Consulting",
+          "Wharton"
+        ],
+        "majors": "Finance, Business Analytics",
+        "projects": "CJ Foods, WRI",
+        "img": "../images/members/board/jean.jpg"
+      },
+      {
+        "name": "Amy Jia",
+        "tags": [
+          "VP of External",
+          "CAS", "Wharton"
+        ],
+        "majors": "Finance, Business Analytics, International Studies",
+        "projects": "Korion Health",
+        "img": "../images/members/board/amy.jpg"
+      },
+      {
+        "name": "Haley Son",
+        "tags": [
+          "VP of Consulting",
+          "Wharton"
+        ],
+        "majors": "Finance, Real Estate",
+        "projects": "Johnson & Johnson/Dr. Lorna Breen Heroes Foundation, Humanscale, Korean American Scholarship Foundation",
+        "img": "../images/members/board/haley.jpg"
+      },
+      {
+        "name": "Katherine (Katie) Fang",
+        "tags": [
+          "VP of Marketing",
+          "Wharton"
+        ],
+        "majors": "Finance, Statistics",
+        "projects": "CJ Foods, Global Delta Capital",
+        "img": "../images/members/board/katie.jpg"
+      },
+      {
+        "name": "Amanda Qu",
+        "tags": [
+          "VP Professional Development",
+          "Wharton"
+        ],
+        "majors": "Finance, OID",
+        "projects": "IKEA/Climate Group, Médecins Sans Frontières (Doctors Without Borders)",
+        "img": "../images/members/board/q.jpg"
       }
     ]
   },
@@ -49,6 +119,57 @@
         "major": "Finance, Statistics, Computer Science",
         "projects": "Global Center for Maritime Decarbonization, Global Delta Capital",
         "img": "../images/members/board/frank.jpeg"
+      },
+      {
+        "name": "Jisoo Kim",
+        "tags": [
+          "PL",
+          "Wharton"
+        ],
+        "majors": "Finance, Management",
+        "projects": "Humanscale, Alzheimer's Association",
+        "img": "../images/members/board/jisoo.jpg"
+      },
+      {
+        "name": "Stefanie Lee",
+        "tags": [
+          "PL",
+          "CAS"
+        ],
+        "majors": "Economics, Psychology",
+        "projects": "Alzheimer's Association, Alternus Energy",
+        "img": "../images/members/board/stefanie.jpg"
+      },
+      {
+        "name": "Cindy Chen",
+        "tags": [
+          "PL",
+          "Wharton"
+        ],
+        "majors": "Finance, Behavioral Economics",
+        "projects": "CJ CheilJedang, Global Delta Capital",
+        "img": "../images/members/board/cindy.png"
+      },
+      {
+        "name": "Kelly Yang",
+        "tags": [
+          "PL",
+          "CAS",
+          "Wharton"
+        ],
+        "majors": "Finance, International Studies",
+        "projects": "Doctors Without Borders ",
+        "img": "../images/members/board/kelly.jpg"
+      },
+      {
+        "name": "Daniel Price",
+        "tags": [
+          "PL",
+          "SEAS"
+        ],
+        "majors": "Computer Science",
+        "projects": "WRI",
+        "img": "../images/members/board/danielp.jpg"
       }
     ]
   },
@@ -57,11 +178,54 @@
     "description": "The consultants are the heart of GRC, providing well-researched and exhaustive solutions to the variety of issues companies bring to us.",
     "members": [
       {
-        "name": "Su-Yeon Lee",
-        "tags": ["Consultant", "SEAS", "Wharton"],
-        "major": "Computer Science, Finance",
-        "projects": "Delta Capital",
-        "img": "../images/members/consultants/yeon.jpg"
+        "name": "Sheen Gupta",
+        "tags": [
+          "Consultant",
+          "Wharton"
+        ],
+        "majors": "Finance, Business Analytics",
+        "projects": "Korion Health",
+        "img": "../images/members/consultants/sheen.jpeg"
+      },
+      {
+        "name": "Sarthak Shrestha",
+        "tags": [
+          "Consultant",
+          "CAS", "Wharton"
+        ],
+        "majors": "Finance, Management, International Studies",
+        "projects": "Johnson & Johnson",
+        "img": "../images/members/consultants/sarthak.jpg"
+      },
+      {
+        "name": "Jayden Shin",
+        "tags": [
+          "Consultant",
+          "CAS"
+        ],
+        "majors": "Neuroscience, Healthcare Management",
+        "projects": "Mayo Clinic, Alzheimer's Association",
+        "img": "../images/members/consultants/jayden.jpg"
+      },
+      {
+        "name": "Matthew Kulubya",
+        "tags": [
+          "Consultant",
+          "Wharton", "SEAS"
+        ],
+        "majors": "Statistics, Computer Science",
+        "projects": "Philabundance, Mayo Clinic",
+        "img": "../images/members/consultants/matthew.jpg"
+      },
+      {
+        "name": "Daniel Bronfman",
+        "tags": [
+          "Consultant",
+          "CAS"
+        ],
+        "majors": "Physics, Mathematical Economics",
+        "projects": "CJ Foods, CJ Logistics",
+        "img": "../images/members/consultants/danielb.png"
       }
     ]
   }

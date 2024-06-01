@@ -54,7 +54,7 @@ import {
 const Heroism = () => {
     const data = useStaticQuery(graphql`
       query {
-        heroImage: imageSharp(fluid: { originalName: { eq: "topImage.jpg" } }) {
+        heroImage: imageSharp(fluid: { originalName: { eq: "IMG_0774.jpg" } }) {
           fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
