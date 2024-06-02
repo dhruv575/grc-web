@@ -25,7 +25,7 @@
     },
     {
         "name": "CJ Foods",
-        "description": "The GRC team consulted for CJ Foods.",
+        "description": "Over the course of 2 semesters, GRC created single-use plastic waste mitigation strategies in food and beverage packaging and provided CJ Foods with sustainable, eco-friendly delivery solutions for parcels delivered across South Korea.",
         "img": "../images/companies/CJFoods.png",
         "link": "https://www.cj.co.kr/en/about/business/food"
     },
@@ -43,19 +43,19 @@
     },
     {
         "name": "UNESCO",
-        "description": "The GRC team consulted for UNESCO.",
+        "description": "Compiling a database of youth-led and youth-driven organizations across the Asia-Pacific region in the area of socio-emotional learning.",
         "img": "../images/companies/UNESCO.png",
         "link": "https://www.unesco.org/en"
     },
     {
         "name": "The World Bank",
-        "description": "The GRC team consulted for The World Bank.",
+        "description": "Researching the role of the private sector in response to public health emergencies, possible areas of contribution, and comparative advantages. Based on this analysis, GRC created specific recommendations for NGOs and governments to best leverage private sector resources.",
         "img": "../images/companies/TheWorldBank.png",
         "link": "https://www.worldbank.org/en/home"
     },
     {
         "name": "Wikipedia",
-        "description": "The GRC team consulted for Wikipedia.",
+        "description": "Assisted the non-profit on the possible launch of a new product, by analyzing the market, possible partners, and possible business models.",
         "img": "../images/companies/Wikipedia.png",
         "link": "https://www.wikipedia.org/"
     },

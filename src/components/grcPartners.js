@@ -10,8 +10,7 @@ const PartnersContainer = styled.div`
     padding: 2rem;
     margin-top: 2rem;
 
-    animation: animateBg 20s linear infinite;
-    background-color: #3DB2C1;
+    background-color: #87CEEB;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   
     @media (max-width: 768px) {
@@ -40,7 +39,7 @@ const PartnerLogo = styled.img`  // Changed from styled(Img) to styled.img since
 
 const Title = styled.h2`
   ${POPPINS_SEMI_BOLD}
-  color: #ffffff;
+  color: black;
   font-size: 4rem;
   text-align: center;
   margin-bottom: 2rem;

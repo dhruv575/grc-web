@@ -11,7 +11,7 @@ import {
   PageDescription,
   StyledAnchor
 } from '../components'
-import { MONTSERRAT_LIGHT, PLAYFAIR_DISPLAY_MEDIUM, POPPINS_LIGHT, POPPINS_MEDIUM, POPPINS_REGULAR } from '../styles/fonts'
+import { MONTSERRAT_LIGHT, PLAYFAIR_DISPLAY_MEDIUM, POPPINS_LIGHT, POPPINS_MEDIUM, POPPINS_REGULAR, POPPINS_SEMI_BOLD } from '../styles/fonts'
 import { BLUE_PERCENT, RED_PERCENT, BLUE, RED } from '../styles/constants'
 
 const WHITE = `#FFFFFF`
@@ -42,7 +42,7 @@ const CardHeader = s.h2`
   padding-left: 40px;
   margin-top: 30px;
   color: black;
-  ${PLAYFAIR_DISPLAY_MEDIUM}
+  ${POPPINS_SEMI_BOLD}
 `
 
 const Content = s.p`
@@ -51,7 +51,7 @@ const Content = s.p`
   color: black;
   font-size: 90%;
   margin-top: 1rem;
-  ${MONTSERRAT_LIGHT}
+  ${POPPINS_LIGHT}
 
   @media (max-width: 768px) {
     margin-top: 2rem;

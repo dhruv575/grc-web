@@ -11,7 +11,7 @@ import { LIGHT_BLUE, WHITE, RED, RED_PERCENT } from '../styles/constants';
 import { POPPINS_SEMI_BOLD, POPPINS_LIGHT, POPPINS_BOLD, MONTSERRAT_BOLD, PLAYFAIR_DISPLAY_LIGHT, PLAYFAIR_DISPLAY_MEDIUM } from '../styles/fonts';
 
 const CardWrapper = s.div`
-  background-color: #3DB2C1;
+  background-color: #87CEEB;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   padding: 2rem 1rem;
   margin-top: 2rem;
@@ -42,7 +42,7 @@ const CardTitle = s.p`
 `;
 
 const CardMajor = s.p`
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-top: -1rem;
   ${POPPINS_LIGHT}
   color: #000;
@@ -72,7 +72,7 @@ const CardDescriptionBold = s.span`
 
 const MemberImg = s(Img)`
   margin: auto;
-  border: 5px solid ${RED};
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
 `;
 
 const Card = ({ name, tags, img, major, projects }) => (
@@ -86,7 +86,7 @@ const Card = ({ name, tags, img, major, projects }) => (
         <CardMajor>{major}</CardMajor>
         <CardTags>
           {tags.map(tag => (
-            <Badge bgColor={RED_PERCENT(0.66)} key={tag}>{tag}</Badge>
+            <Badge bgColor={"#1e3a8a"} key={tag}>{tag}</Badge>
           ))}
         </CardTags>
       </Col>

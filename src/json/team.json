@@ -6,8 +6,8 @@
       {
         "name": "Julian Ward",
         "tags": ["President", "Wharton"],
-        "major": "Finance",
-        "projects": "Amazon, NASA",
+        "major": "Finance, Management",
+        "projects": "Google, Microsoft",
         "img": "../images/members/board/julian.jpg"
       },
       {
@@ -24,11 +24,24 @@
     "description": "Vice Presidents head individal efforts, leading the club's curriculum design, external relations, internal opportunities, consulting groups, and finances.",
     "members": [
       {
-        "name": "Dhruv Gupta",
-        "tags": ["VP of Finance", "SEAS"],
-        "major": "Artificial Intelligence",
-        "projects": "Philabundance, CVS",
-        "img": "../images/members/board/dhruv.jpg"
+        "name": "Haley Son",
+        "tags": [
+          "VP of Consulting",
+          "Wharton"
+        ],
+        "major": "Finance, Real Estate",
+        "projects": "Johnson & Johnson/Dr. Lorna Breen Heroes Foundation, Humanscale, Korean American Scholarship Foundation",
+        "img": "../images/members/board/haley.jpg"
+      },
+      {
+        "name": "Jean Chua",
+        "tags": [
+          "VP of Consulting",
+          "Wharton"
+        ],
+        "major": "Finance, Business Analytics",
+        "projects": "CJ Foods, WRI",
+        "img": "../images/members/board/jean.jpg"
       },
       {
         "name": "Evan Zheng",
@@ -41,6 +54,13 @@
         "img": "../images/members/board/evan.jpg"
       },
       {
+        "name": "Dhruv Gupta",
+        "tags": ["VP of Finance", "SEAS"],
+        "major": "Artificial Intelligence",
+        "projects": "Philabundance, CVS",
+        "img": "../images/members/board/dhruv.jpg"
+      },
+      {
         "name": "Hannah Kim",
         "tags": [
           "VP of Internal",
@@ -51,14 +71,14 @@
         "img": "../images/members/board/hannahk.jpg"
       },
       {
-        "name": "Jean Chua",
+        "name": "Amanda Qu",
         "tags": [
-          "VP Consulting",
+          "VP of Professional Development",
           "Wharton"
         ],
-        "major": "Finance, Business Analytics",
-        "projects": "CJ Foods, WRI",
-        "img": "../images/members/board/jean.jpg"
+        "major": "Finance, OID",
+        "projects": "IKEA/Climate Group, Médecins Sans Frontières (Doctors Without Borders)",
+        "img": "../images/members/board/q.jpg"
       },
       {
         "name": "Amy Jia",
@@ -71,14 +91,14 @@
         "img": "../images/members/board/amy.jpg"
       },
       {
-        "name": "Haley Son",
+        "name": "Paris Ye",
         "tags": [
-          "VP of Consulting",
+          "VP of External",
           "Wharton"
         ],
-        "major": "Finance, Real Estate",
-        "projects": "Johnson & Johnson/Dr. Lorna Breen Heroes Foundation, Humanscale, Korean American Scholarship Foundation",
-        "img": "../images/members/board/haley.jpg"
+        "major": "Management, ESG for Business",
+        "projects": "CJ Foods, Global Delta Capital",
+        "img": "../images/members/board/paris.JPG"
       },
       {
         "name": "Katherine (Katie) Fang",
@@ -89,16 +109,6 @@
         "major": "Finance, Statistics",
         "projects": "CJ Foods, Global Delta Capital",
         "img": "../images/members/board/katie.jpg"
-      },
-      {
-        "name": "Amanda Qu",
-        "tags": [
-          "VP Professional Development",
-          "Wharton"
-        ],
-        "major": "Finance, OID",
-        "projects": "IKEA/Climate Group, Médecins Sans Frontières (Doctors Without Borders)",
-        "img": "../images/members/board/q.jpg"
       }
     ]
   },
@@ -141,16 +151,6 @@
         "img": "../images/members/board/stefanie.jpg"
       },
       {
-        "name": "Cindy Chen",
-        "tags": [
-          "PL",
-          "Wharton"
-        ],
-        "major": "Finance, Behavioral Economics",
-        "projects": "CJ CheilJedang, Global Delta Capital",
-        "img": "../images/members/board/cindy.png"
-      },
-      {
         "name": "Kelly Yang",
         "tags": [
           "PL",
@@ -160,6 +160,27 @@
         "major": "Finance, International Studies",
         "projects": "Doctors Without Borders ",
         "img": "../images/members/board/kelly.jpg"
+      },
+      {
+        "name": "Cosette Burrese",
+        "tags": [
+          "PL",
+          "Wharton",
+          "CAS"
+        ],
+        "major": "Multinational Management, International Studies",
+        "projects": "PepsiCo, Brac International, Climate Group, Korean American Scholarship Foundation",
+        "img": "../images/members/board/cosette.JPG"
+      },
+      {
+        "name": "Cindy Chen",
+        "tags": [
+          "PL",
+          "Wharton"
+        ],
+        "major": "Finance, Behavioral Economics",
+        "projects": "CJ CheilJedang, Global Delta Capital",
+        "img": "../images/members/board/cindy.png"
       },
       {
         "name": "Daniel Price",

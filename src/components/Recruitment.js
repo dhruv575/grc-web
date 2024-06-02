@@ -11,7 +11,7 @@ const RecruitmentRow = styled.div`
   flex-wrap: wrap;
   margin: 2rem 0;
   animation: animateBg 20s linear infinite;
-  background-color: #3DB2C1;
+  background-color: #87CEEB;
   background-size: 400% 400%;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 
@@ -23,14 +23,14 @@ const RecruitmentRow = styled.div`
 const RecruitmentTitle = styled.h1`
   ${POPPINS_SEMI_BOLD}
   font-size: 3rem;
-  color: white;
+  color: black;
   margin-bottom: 1.5rem;
 `;
 
 const RecruitmentDescription = styled.p`
   ${POPPINS_REGULAR}
   font-size: 1rem;
-  color: white;
+  color: black;
   line-height: 1.5;
   margin-bottom: 2rem;
 `;
@@ -93,7 +93,7 @@ const Recruitment = () => {
                 The Global Research and Consulting (GRC) Group at Wharton is a dynamic, student-run organization with a mission to drive global social impact and empower future leaders. Our talented teams collaborate to deliver innovative solutions for esteemed clients such as UNESCO, Microsoft, World Bank, Wikipedia, Oxfam, and WWF. By joining GRC Wharton, students gain invaluable, hands-on experience working on real-world projects across key markets like China, Africa, India, and the US. Our focus areas include education, global health, impact investing, development, sustainability, and analytics. Become a part of GRC Wharton to enhance your professional skills and make a meaningful impact on a global scale.
             </RecruitmentDescription>
             <ApplyButton
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeduPvGWySAkxCWQwdrvpvSppx2455xjNRh1yi4aCn_lJnQ2Q/viewform"
+              href="https://pennclubs.com/club/global-research-and-consulting"
               target="_blank"
             >
               Apply

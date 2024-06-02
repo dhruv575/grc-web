@@ -15,7 +15,7 @@ const NoPaddingContainer = styled.div`
 
 const Title = styled.h2`
   ${POPPINS_SEMI_BOLD}
-  color: #3DB2C1;
+  color: #87CEEB;
   font-size: 4rem;
   text-align: center;
   margin-top: 4rem;

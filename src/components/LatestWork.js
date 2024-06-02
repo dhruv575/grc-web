@@ -20,7 +20,7 @@ const LatestWorkWrapper = styled.div`
 
 const Title = styled.h2`
   ${POPPINS_SEMI_BOLD}
-  color: #3DB2C1;
+  color: #87CEEB;
   text-align: center;
   font-size: 4rem;
   margin-top: 2rem;
