@@ -9,7 +9,7 @@ export const Badge = s.span`
   border-radius: 5px;
   width: 9rem;
   padding: 0.2rem 0.5rem;
-  color: white;
+  color: black;
   font-size: 90%;
   margin-right: 1rem;
   text-align: center;

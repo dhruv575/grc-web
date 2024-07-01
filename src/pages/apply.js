@@ -53,7 +53,8 @@ const ImgWrapper = s.div`
 `;
 
 const roles = [
-  'Consulting'
+  'Beome a Consultant',
+  'Become a GBM Member'
 ];
 
 const StyledRow = s(Row)`
@@ -101,22 +102,22 @@ const Recruitment = ({ open }) => {
       {open ? (
         <StyledRow>
           <Col lg={6}>
-            <PageTitle> We're Recruiting! </PageTitle>
+            <PageTitle> Joining GRC </PageTitle>
             <PageDescription>
-            The Wharton Global Research and Consulting Group (GRC) is a dynamic, student-run organization dedicated to driving social impact through pro-bono consulting. Our talented teams collaborate to deliver innovative solutions for global non-profits, social impact startups, and governmental organizations. At Wharton GRC, students gain real-world experience by working on impactful projects with esteemed clients like UNESCO, Microsoft, and the World Bank. Join one of our teams to gain invaluable, hands-on consulting experience and make a meaningful difference in the world.
+            Global Research and Consulting Group (GRC) is a dynamic, student-run organization dedicated to driving social impact through pro-bono consulting. Our talented teams collaborate to deliver innovative solutions for global non-profits, governmental organizations, and F100 companies. At Wharton GRC, students gain real-world experience by working on impactful projects with esteemed clients like Google, UNESCO, Microsoft, and the World Bank. Join one of our teams to gain invaluable, hands-on consulting experience and make a meaningful difference in the world.            
             </PageDescription>
             {roles.map(role => (
               <Badge key={role}> {role} </Badge>
             ))}
-            <StyledAnchor
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdshBhPBctwHmt52D1iUAcv_f0OVKUqM3RXiCJCvyvBojYk0A/closedform"
+            {/* <StyledAnchor
+              href="/apply"
               target="_blank"
             >
               <div style={{ marginTop: '2rem' }}>
                 <Chevron bgColor={BLUE} color={WHITE} />{' '}
                 <ApplyHere> APPLY HERE </ApplyHere>
               </div>
-            </StyledAnchor>
+            </StyledAnchor> */}
           </Col>
           <Col>
             <ImgWrapper>
@@ -141,9 +142,9 @@ const Recruitment = ({ open }) => {
       )}
 
       <SectionWrapper>
-        <SectionTitle> Interested in GRC? </SectionTitle>
-        <PageDescription>GRC is excited to recruit a new cohort of consultants for the fall of 2023! The new consultants will benefit from exclusive training sessions, career treks, networking opportunities, access to our extensive alumni network, and a close-knit community. </PageDescription>
-        <PageDescription>We are proud to foster a strong, supportive community and look forward to welcoming you! Recruitment will begin at the start of the 2023-2024 academic year. Follow our Instagram to stay updated with the timeline!</PageDescription>
+        <SectionTitle> There are two ways to join GRC: </SectionTitle>
+        <PageDescription>1. Become a Consultant - Application Required</PageDescription>
+        <PageDescription>2. Become a General Body Member - No Application Required</PageDescription>
       </SectionWrapper>
       <SectionWrapper>
         <SectionTitle> Who Should Join? </SectionTitle>
@@ -152,6 +153,44 @@ const Recruitment = ({ open }) => {
         </PageDescription>
         <PageDescription>
         No prior consulting or business experience is necessary. We provide all the training you need. If you are dedicated to social impact, excel in teamwork, and are eager to learn and grow with GRC, there’s a place for you!
+        </PageDescription>
+      </SectionWrapper>
+      <SectionWrapper>
+        <SectionTitle> GRC Consulting Application Information and Tips </SectionTitle>
+        <PageDescription>
+        Applicants of all majors and backgrounds are highly encouraged to apply! GRC consultants are represented across all four of Penn's colleges and represent over 30 countries.
+        We recommend that applicants consider the following:
+        </PageDescription>
+        <PageDescription>
+         1. Meet the Board! We would love the opportunity to get to know you better at one of our information sessions or a one-on-one coffee chat
+        </PageDescription>
+        <PageDescription>
+         2. Familiarize yourself with common consulting concepts (slide making, research and presentation skills, etc.)
+        </PageDescription>
+        <PageDescription>
+         3. Demonstrate your commitment to social impact - GRC works with a variety of clients, but all projects aim to advance our mission of making a difference
+        </PageDescription>
+      </SectionWrapper>
+      <SectionWrapper>
+        <SectionTitle>
+          Application Timeline
+        </SectionTitle>
+        <PageDescription>
+        September 14: PennClubs application deadline
+        </PageDescription>
+        <PageDescription>
+        September 20: Single-round interview for select candidates
+        </PageDescription>
+        <PageDescription>
+        September 22: All candidates are notified of the status of their application
+        </PageDescription>
+      </SectionWrapper>
+      <SectionWrapper>
+        <SectionTitle>
+          Next Steps
+        </SectionTitle>
+        <PageDescription>
+        Unfortunately, we are not able to accept all applicants into our limited consulting positions each semester. We strongly recommend attending our weekly sessions as a General Body Member before reapplying in subsequent semesters.
         </PageDescription>
       </SectionWrapper>
       <SectionWrapper>
