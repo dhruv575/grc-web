@@ -9,22 +9,11 @@ export const Badge = s.span`
   border-radius: 5px;
   width: 9rem;
   padding: 0.2rem 0.5rem;
-  color: black;
   font-size: 90%;
   margin-right: 1rem;
   text-align: center;
   display: inline-block;
   margin-top: 1rem;
-`
-
-const ApplyButton = s.div`
-  background-color: ${BLUE};
-  ${POPPINS_REGULAR}
-  border-radius: ${({ radius = '6px' }) => radius}px;
-  width: 5rem;
-  text-align: center;
-  padding: 0.2rem 1rem;
-  color: white;
 `
 
 export const ApplyButtonNav = s.div`

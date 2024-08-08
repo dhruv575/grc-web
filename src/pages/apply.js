@@ -9,16 +9,9 @@ import {
   Badge,
   PageTitle,
   PageDescription,
-  Chevron,
-  StyledAnchor
 } from '../components';
-import { BLUE_PERCENT, RED, BLUE, WHITE } from '../styles/constants';
-import { POPPINS_BOLD, POPPINS_SEMI_BOLD } from '../styles/fonts';
-
-const Wrapper = s.div`
-  background-color: ${BLUE_PERCENT(0.04)};
-  padding: 3rem 0;
-`;
+import { BLUE_PERCENT, RED } from '../styles/constants';
+import { POPPINS_SEMI_BOLD } from '../styles/fonts';
 
 const SectionTitle = s.h1`
   ${POPPINS_SEMI_BOLD}
@@ -26,19 +19,6 @@ const SectionTitle = s.h1`
 
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;
-  }
-`;
-
-const IFrameWrapper = s.div`
-  margin: auto;
-  width: 80%;
-
-  .iframe {
-    height: calc(100% - 59px);
-  }
-
-  @media (max-width: 768px) {
-    width: 90%;
   }
 `;
 
@@ -78,12 +58,6 @@ const SectionWrapper = s.div`
   @media (max-width: 768px) {
     padding: 2rem 1rem;
   }
-`;
-
-const ApplyHere = s.span`
-  ${POPPINS_BOLD}
-  color: ${RED};
-  margin-left: 0.3rem;
 `;
 
 const Recruitment = ({ open }) => {
@@ -205,7 +179,8 @@ const Recruitment = ({ open }) => {
             height="315" 
             style={{ border: 'none', overflow: 'hidden' }} 
             scrolling="no" 
-            frameBorder="0" 
+            frameBorder="0"
+            title="GRC Video"
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
             allowFullScreen={true}
           ></iframe>

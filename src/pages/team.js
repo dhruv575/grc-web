@@ -3,15 +3,13 @@ import s from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { Row, Col } from 'react-bootstrap';
-import ContentGrid from '../components/funGrid';
 import LetterFromPresident from '../components/Letter';
 
 import { Container, PageTitle, Badge } from '../components';
-import { LIGHT_BLUE, WHITE, RED, RED_PERCENT } from '../styles/constants';
-import { POPPINS_SEMI_BOLD, POPPINS_LIGHT, POPPINS_BOLD, MONTSERRAT_BOLD, PLAYFAIR_DISPLAY_LIGHT, PLAYFAIR_DISPLAY_MEDIUM } from '../styles/fonts';
+import { POPPINS_SEMI_BOLD, POPPINS_LIGHT, POPPINS_BOLD, MONTSERRAT_BOLD, PLAYFAIR_DISPLAY_LIGHT } from '../styles/fonts';
 
 const CardWrapper = s.div`
-  background-color: #87CEEB;
+  background-color: ${({ isEven }) => isEven ? '#1e3a8a' : 'white'};
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   padding: 2rem 1rem;
   margin-top: 2rem;
@@ -34,7 +32,7 @@ const CardWrapper = s.div`
 const CardTitle = s.p`
   font-size: 1.4rem;
   ${POPPINS_BOLD}
-  color: #000;
+  color: ${({ isEven }) => isEven ? 'white' : 'black'};
   @media screen and (max-width: 768px) {
     font-size: 1.2rem;
     margin-top: 1rem;
@@ -45,7 +43,7 @@ const CardMajor = s.p`
   font-size: 0.9rem;
   margin-top: -1rem;
   ${POPPINS_LIGHT}
-  color: #000;
+  color: ${({ isEven }) => isEven ? 'white' : 'black'};
   @media screen and (max-width: 768px) {
     font-size: 0.9rem;
   }
@@ -58,7 +56,7 @@ const CardTags = s.div`
 const CardDescription = s.div`
   ${POPPINS_LIGHT}
   margin-top: 2rem;
-  color: #000;
+  color: ${({ isEven }) => isEven ? 'white' : 'black'};
   @media screen and (max-width: 768px) {
     margin-top: 1rem;
     font-size: 0.9rem;
@@ -67,7 +65,7 @@ const CardDescription = s.div`
 
 const CardDescriptionBold = s.span`
   ${POPPINS_SEMI_BOLD}
-  color: #000;
+  color: ${({ isEven }) => isEven ? 'white' : 'black'};
 `;
 
 const MemberImg = s(Img)`
@@ -75,25 +73,25 @@ const MemberImg = s(Img)`
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
 `;
 
-const Card = ({ name, tags, img, major, projects }) => (
-  <CardWrapper>
+const Card = ({ name, tags, img, major, projects, isEven }) => (
+  <CardWrapper isEven={isEven}>
     <Row>
       <Col md={6}>
         <MemberImg fluid={img?.childImageSharp?.fluid} />
       </Col>
       <Col md={6}>
-        <CardTitle>{name}</CardTitle>
-        <CardMajor>{major}</CardMajor>
+        <CardTitle isEven={isEven}>{name}</CardTitle>
+        <CardMajor isEven={isEven}>{major}</CardMajor>
         <CardTags>
           {tags.map(tag => (
-            <Badge bgColor={"#1e3a8a"} key={tag}>{tag}</Badge>
+            <Badge bgColor={isEven ? "white" : "#1e3a8a"} color={isEven ? "black" : "white"} key={tag}>{tag}</Badge>
           ))}
         </CardTags>
       </Col>
     </Row>
     <Row>
       <Col md={12}>
-        {projects && <CardDescription><CardDescriptionBold>Projects:</CardDescriptionBold> {projects}</CardDescription>}
+        {projects && <CardDescription isEven={isEven}><CardDescriptionBold isEven={isEven}>Projects:</CardDescriptionBold> {projects}</CardDescription>}
       </Col>
     </Row>
   </CardWrapper>
@@ -111,11 +109,11 @@ const SectionWrapper = s.div`
   }
 `;
 
-const Members = ({ members }) => (
+const Members = ({ members, isEven }) => (
   <Row>
     {members.map(member => (
       <Col lg={4} md={6} key={member.name} className="mb-4">
-        <Card {...member} />
+        <Card {...member} isEven={isEven} />
       </Col>
     ))}
   </Row>
@@ -200,7 +198,7 @@ const Teams = () => {
           <SectionWrapper idx={idx} key={team.name}>
             <TeamTitle>{team.name}</TeamTitle>
             <TeamDescription>{team.description}</TeamDescription>
-            <Members members={team.members} />
+            <Members members={team.members} isEven={idx % 2 !== 0} />
           </SectionWrapper>
         ))}
       </div>

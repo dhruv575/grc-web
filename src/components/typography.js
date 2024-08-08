@@ -2,7 +2,7 @@ import React from 'react'
 import s from 'styled-components'
 import { Link } from 'gatsby'
 
-import { MONTSERRAT_BOLD, MONTSERRAT_REGULAR, MONTSERRAT_SEMI_BOLD, PLAYFAIR_DISPLAY_REGULAR, POPPINS_BOLD, POPPINS_REGULAR, POPPINS_SEMI_BOLD } from '../styles/fonts'
+import { POPPINS_REGULAR, POPPINS_SEMI_BOLD } from '../styles/fonts'
 
 export const PageTitle = s.h1`
   ${POPPINS_SEMI_BOLD}

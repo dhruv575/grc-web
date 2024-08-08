@@ -11,10 +11,10 @@ import {
   PageDescription,
   StyledAnchor
 } from '../components'
-import { MONTSERRAT_LIGHT, PLAYFAIR_DISPLAY_MEDIUM, POPPINS_LIGHT, POPPINS_MEDIUM, POPPINS_REGULAR, POPPINS_SEMI_BOLD } from '../styles/fonts'
-import { BLUE_PERCENT, RED_PERCENT, BLUE, RED } from '../styles/constants'
+import { POPPINS_LIGHT, POPPINS_SEMI_BOLD } from '../styles/fonts'
 
 const WHITE = `#FFFFFF`
+const DARK_BLUE = `#1e3a8a`
 const BOX_SHADOW = `0px 5px 20px rgba(0, 0, 0, 0.1)`
 
 const CardWrapper = s.div.attrs(({ className }) => ({
@@ -58,24 +58,8 @@ const Content = s.p`
   }
 `
 
-const getBgColor = (idx, color0, color1) => {
-  const flip = Math.floor(idx / 2) % 2 !== 0
-  let bgColor = idx % 2 === 0 ? color0 : color1
-
-  if (flip) {
-    if (bgColor === color0) {
-      bgColor = color1
-    } else {
-      bgColor = color0
-    }
-  }
-
-  return bgColor
-}
-
 const ImgWrapper = s.div`
-  background-color: ${({ idx }) =>
-    getBgColor(idx, '#1e3a8a', '#3DB2C1')};
+  background-color: ${DARK_BLUE};
   padding: 2rem 0;
 `
 
@@ -89,16 +73,16 @@ const StyledImg = s(Img)`
   }
 `
 
-const CardContent = ({ name, link, description, img, idx }) => (
+const CardContent = ({ name, link, description, img }) => (
   <>
-    <ImgWrapper idx={idx}>
+    <ImgWrapper>
       <StyledImg fluid={img.childImageSharp.fluid} />
     </ImgWrapper>
     <CardHeader href={link}>{name}</CardHeader>
     <Content>
       <p style={{ paddingRight: '1rem' }}>{description} </p>
       <Chevron
-        bgColor={getBgColor(idx, '#1e3a8a', '#3DB2C1')}
+        bgColor={DARK_BLUE}
         color={WHITE}
         floatRight
         link={link}
@@ -174,9 +158,9 @@ const Projects = () => {
         <Col lg={8}>
           <Row>
             {projects.map((project, idx) => (
-              <Col md={6}>
+              <Col md={6} key={idx}>
                 <Card>
-                  <CardContent {...project} idx={idx} />
+                  <CardContent {...project} />
                 </Card>
               </Col>
             ))}

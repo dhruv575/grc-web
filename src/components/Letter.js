@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import image1 from '../images/members/board/richard.jpg'; // Path to the first image
 import image2 from '../images/members/board/julian.jpg'; // Path to the second image
-import { PLAYFAIR_DISPLAY_MEDIUM } from '../styles/fonts';
 
 const Container = styled.div`
   display: flex;
@@ -63,13 +62,6 @@ const Name = styled.h2`
   margin: 1rem 0 0rem;
   font-style: italic;
   color: #ffffff;
-`;
-
-const Title = styled.h1`
-  ${PLAYFAIR_DISPLAY_MEDIUM}
-  font-style: italic;
-  font-size: 1.5rem;
-  margin: 1.5rem 0;
 `;
 
 const Role = styled.p`

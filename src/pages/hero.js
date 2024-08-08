@@ -3,26 +3,15 @@ import s from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby';
 
 import {
-    Container,
     Chevron,
     StyledLink,
   } from '../components'
   import {
     POPPINS_BOLD,
-    POPPINS_REGULAR,
-    POPPINS_SEMI_BOLD,
-    MONTSERRAT_REGULAR,
-    PLAYFAIR_DISPLAY_SEMI_BOLD,
-    PLAYFAIR_DISPLAY_LIGHT,
-    PLAYFAIR_DISPLAY_REGULAR,
-    LATO_REGULAR,
-    LATO_BOLD,
-    MONTSERRAT_BOLD,
     MONTSERRAT_SEMI_BOLD,
-    PLAYFAIR_DISPLAY_MEDIUM,
-    MONTSERRAT_MEDIUM
+    PLAYFAIR_DISPLAY_MEDIUM
   } from '../styles/fonts'
-  import { WHITE, RED } from '../styles/constants'
+  import { WHITE } from '../styles/constants'
   
   const Heroic = s.div`
     text-align: center;
@@ -75,9 +64,9 @@ const Heroism = () => {
     return (
       <Heroic bgImage={heroImage}>
         <HelloWorld> Wharton GRC </HelloWorld>
-        <span role="emoji" style={{ fontSize: '2rem', magrinTop: '-2rem' }}>
+        <p style={{ fontSize: '2rem', magrinTop: '-2rem' }}>
         INSIGHTS FOR IMPACT
-        </span>
+        </p>
         <StyledLink to="/projects">
           <Checkout>
             Check out our projects <Chevron />

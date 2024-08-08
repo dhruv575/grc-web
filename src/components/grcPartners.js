@@ -8,9 +8,8 @@ const PartnersContainer = styled.div`
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     padding: 2rem;
-    margin-top: 2rem;
 
-    background-color: #87CEEB;
+    background-color: white;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   
     @media (max-width: 768px) {

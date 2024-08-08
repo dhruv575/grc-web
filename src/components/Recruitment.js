@@ -9,9 +9,9 @@ const RecruitmentRow = styled.div`
   padding: 3rem 5rem;
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem 0;
+  margin: 0rem 0;
   animation: animateBg 20s linear infinite;
-  background-color: #87CEEB;
+  background-color: white;
   background-size: 400% 400%;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 
