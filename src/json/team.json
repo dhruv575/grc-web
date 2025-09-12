@@ -4,18 +4,24 @@
     "description": "The presidents lead the club, sourcing opportunities for students, setting the vision for GRC, and running most meetings for the team and board.",
     "members": [
       {
-        "name": "Julian Ward",
-        "tags": ["President", "Wharton"],
-        "major": "Finance, Management",
-        "projects": "Google, Microsoft",
-        "img": "../images/members/board/julian.jpg"
+        "name": "Haley Son",
+        "tags": [
+          "President",
+          "Wharton"
+        ],
+        "major": "Finance, Real Estate",
+        "projects": "Johnson & Johnson/Dr. Lorna Breen Heroes Foundation, Humanscale, Korean American Scholarship Foundation",
+        "img": "../images/members/board/haley.jpg"
       },
       {
-        "name": "Richard Liu",
-        "tags": ["President", "Wharton"],
-        "major": "Finance, Social Impact",
-        "projects": "Amor Bueno",
-        "img": "../images/members/board/richard.jpg"
+        "name": "Hannah Kim",
+        "tags": [
+          "President",
+          "CAS"
+        ],
+        "major": "Economics",
+        "projects": "CVS Health, Climate Group",
+        "img": "../images/members/board/hannahk.jpg"
       }
     ]
   },
@@ -24,14 +30,11 @@
     "description": "Vice Presidents head individal efforts, leading the club's curriculum design, external relations, internal opportunities, consulting groups, and finances.",
     "members": [
       {
-        "name": "Haley Son",
-        "tags": [
-          "VP of Consulting",
-          "Wharton"
-        ],
-        "major": "Finance, Real Estate",
-        "projects": "Johnson & Johnson/Dr. Lorna Breen Heroes Foundation, Humanscale, Korean American Scholarship Foundation",
-        "img": "../images/members/board/haley.jpg"
+        "name": "Richard Liu",
+        "tags": ["VP of External", "Wharton"],
+        "major": "Finance, Social Impact",
+        "projects": "Amor Bueno",
+        "img": "../images/members/board/richard.jpg"
       },
       {
         "name": "Jean Chua",
@@ -59,16 +62,6 @@
         "major": "Artificial Intelligence",
         "projects": "Philabundance, CVS",
         "img": "../images/members/board/dhruv.jpg"
-      },
-      {
-        "name": "Hannah Kim",
-        "tags": [
-          "VP of Internal",
-          "CAS"
-        ],
-        "major": "Economics",
-        "projects": "CVS Health, Climate Group",
-        "img": "../images/members/board/hannahk.jpg"
       },
       {
         "name": "Amanda Qu",
