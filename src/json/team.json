@@ -57,11 +57,22 @@
         "img": "../images/members/board/evan.jpg"
       },
       {
+<<<<<<< HEAD
         "name": "Dhruv Gupta",
         "tags": ["VP of Finance", "SEAS"],
         "major": "Artificial Intelligence",
         "projects": "Philabundance, CVS",
         "img": "../images/members/board/dhruv.jpg"
+=======
+        "name": "Hannah Kim",
+        "tags": [
+          "VP of Internal",
+          "CAS"
+        ],
+        "major": "Economics",
+        "projects": "CVS Health, Climate Group",
+        "img": "../images/members/board/hannahk.jpg"
+>>>>>>> 3b2eabcc59236dd4bdf0163236f726fa41924043
       },
       {
         "name": "Amanda Qu",
