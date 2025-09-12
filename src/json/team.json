@@ -54,13 +54,6 @@
         "img": "../images/members/board/evan.jpg"
       },
       {
-        "name": "Dhruv Gupta",
-        "tags": ["VP of Finance", "SEAS"],
-        "major": "Artificial Intelligence",
-        "projects": "Philabundance, CVS",
-        "img": "../images/members/board/dhruv.jpg"
-      },
-      {
         "name": "Hannah Kim",
         "tags": [
           "VP of Internal",
