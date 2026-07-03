@@ -3,22 +3,13 @@ import { Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 
 import { StyledLink } from './typography';
-import { POPPINS_MEDIUM, POPPINS_BOLD } from '../styles/fonts';
-import { PLUM_DEEP, ACCENT, WHITE } from '../styles/constants';
+import { POPPINS_MEDIUM } from '../styles/fonts';
+import { PLUM_DEEP, ACCENT } from '../styles/constants';
 
 const LINKS = [
   { name: 'Team', link: '/team' },
   { name: 'Projects', link: '/projects' }
 ];
-
-const Brand = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: ${WHITE};
-  ${POPPINS_BOLD}
-  font-size: 1.05rem;
-`;
 
 const NavBarText = styled(Navbar.Text)`
   color: rgba(255, 255, 255, 0.75);
@@ -60,21 +51,6 @@ const CollapseWrapper = styled(Navbar.Collapse)`
   }
 `;
 
-const Mark = () => (
-  <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-    <circle cx="13" cy="13" r="12" stroke={ACCENT} strokeWidth="1.4" />
-    <circle cx="13" cy="13" r="2" fill={ACCENT} />
-    <circle cx="5" cy="9" r="1.6" fill={ACCENT} />
-    <circle cx="21" cy="9" r="1.6" fill={ACCENT} />
-    <circle cx="9" cy="21" r="1.6" fill={ACCENT} />
-    <circle cx="19" cy="19" r="1.6" fill={ACCENT} />
-    <line x1="13" y1="13" x2="5" y2="9" stroke={ACCENT} strokeWidth="0.8" />
-    <line x1="13" y1="13" x2="21" y2="9" stroke={ACCENT} strokeWidth="0.8" />
-    <line x1="13" y1="13" x2="9" y2="21" stroke={ACCENT} strokeWidth="0.8" />
-    <line x1="13" y1="13" x2="19" y2="19" stroke={ACCENT} strokeWidth="0.8" />
-  </svg>
-);
-
 export const NavBar = () => (
   <Navbar
     sticky="top"
@@ -89,10 +65,7 @@ export const NavBar = () => (
   >
     <StyledLink to="/">
       <Navbar.Brand style={{ margin: 0 }}>
-        <Brand>
-          <Mark />
-          Wharton GRC
-        </Brand>
+        <img src="/logo-rect.png" height="42" alt="Wharton GRC logo" />
       </Navbar.Brand>
     </StyledLink>
     <Navbar.Toggle style={{ border: 'none', filter: 'invert(1)' }} />
