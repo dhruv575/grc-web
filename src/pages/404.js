@@ -1,51 +1,48 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-// styles
 const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  color: "#1B1420",
+  padding: "96px 24px",
+  fontFamily: "'Inter', sans-serif",
+  backgroundColor: "#F7F3EC",
+  minHeight: "60vh",
 }
 const headingStyles = {
   marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
+  marginBottom: 24,
+  maxWidth: 420,
+  fontWeight: 700,
+  color: "#1B3A5C",
 }
 
 const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
+  marginBottom: 32,
+  lineHeight: 1.6,
 }
 
-// markup
+const linkStyles = {
+  color: "#2F6FB0",
+  fontWeight: 600,
+}
+
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
       <title>Not found</title>
       <h1 style={headingStyles}>Page not found</h1>
       <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
+        Sorry, we couldn't find what you were looking for.
         <br />
         {process.env.NODE_ENV === "development" ? (
           <>
             <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
+            Try creating a page in <code>src/pages/</code>.
             <br />
           </>
         ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/" style={linkStyles}>Go home</Link>.
       </p>
     </main>
   )
