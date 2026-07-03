@@ -2,21 +2,31 @@ import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import { POPPINS_SEMI_BOLD } from '../styles/fonts';
+import { MONTSERRAT_BOLD, POPPINS_MEDIUM } from '../styles/fonts';
+import { PARCHMENT, VIOLET, WHITE } from '../styles/constants';
 
 const LatestWorkWrapper = styled.div`
-  background-color: #1e3a8a;
-  padding: 3rem 0;
+  background-color: ${PARCHMENT};
+  padding: 4rem 0 3.5rem;
   overflow: hidden;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+`;
+
+const Eyebrow = styled.div`
+  ${POPPINS_MEDIUM}
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: ${VIOLET};
+  text-align: center;
+  margin-bottom: 0.9rem;
 `;
 
 const Title = styled.h2`
-  ${POPPINS_SEMI_BOLD}
-  color: #ffffff;
+  ${MONTSERRAT_BOLD}
+  color: #1B1420;
   text-align: center;
-  font-size: 4rem;
-  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
 `;
 
 const CarouselContainer = styled.div`
@@ -43,8 +53,9 @@ const ProjectContainer = styled.a`
   margin: 20px 1rem;
   transition: transform 0.3s ease;
   padding: 0.5rem;
-  background-color: white;
-  border-radius: 15px;
+  background-color: ${WHITE};
+  border-radius: 8px;
+  border: 1px solid #eae3da;
 
   &:hover {
     transform: scale(1.05);
@@ -52,7 +63,7 @@ const ProjectContainer = styled.a`
 `;
 
 const StyledImg = styled(Img)`
-  border-radius: 10px;
+  border-radius: 6px;
 `;
 
 export const LatestWork = () => {
@@ -81,14 +92,15 @@ export const LatestWork = () => {
 
   return (
     <LatestWorkWrapper>
+      <Eyebrow>Our clients</Eyebrow>
       <Title>Our Projects</Title>
       <CarouselContainer>
         <CarouselTrack>
           {duplicatedProjects.map((project, index) => (
-            <ProjectContainer 
-              key={index} 
-              href={project.link} 
-              target="_blank" 
+            <ProjectContainer
+              key={index}
+              href={project.link}
+              target="_blank"
               rel="noopener noreferrer"
             >
               <StyledImg fixed={project.img.childImageSharp.fixed} alt={project.name} />

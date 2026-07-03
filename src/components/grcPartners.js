@@ -1,47 +1,58 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { POPPINS_SEMI_BOLD } from '../styles/fonts';
+import { MONTSERRAT_BOLD, POPPINS_MEDIUM } from '../styles/fonts';
+import { WHITE, VIOLET } from '../styles/constants';
 
 const PartnersContainer = styled.div`
-    align-items: center;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 2rem;
+  padding: 4rem 5% 4.5rem;
+  background-color: ${WHITE};
 
-    background-color: white;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-  
-    @media (max-width: 768px) {
-      padding: 2rem;
-    }
+  @media (max-width: 768px) {
+    padding: 3rem 1.5rem;
+  }
 `;
 
 const PartnersScrollContainer = styled.div`
-    display: flex;
-    overflow-x: auto;
-    align-items: center;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  
-    @media (max-width: 768px) {
-      padding: 2rem;
-    }
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  gap: 2.5rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  max-width: 1100px;
+  margin: 0 auto;
 `;
 
-const PartnerLogo = styled.img`  // Changed from styled(Img) to styled.img since we are not using gatsby-image now
-    height: 200px;
-    flex-shrink: 0;
-    margin-right: 20px;
-    scroll-snap-align: start;
+const PartnerLogo = styled.img`
+  height: 140px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  filter: grayscale(20%);
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+
+  :hover {
+    opacity: 1;
+  }
+`;
+
+const Eyebrow = styled.div`
+  ${POPPINS_MEDIUM}
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: ${VIOLET};
+  text-align: center;
+  margin-bottom: 0.9rem;
 `;
 
 const Title = styled.h2`
-  ${POPPINS_SEMI_BOLD}
-  color: black;
-  font-size: 4rem;
+  ${MONTSERRAT_BOLD}
+  color: #1B1420;
+  font-size: 2.2rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 `
 
 const PartnerScroll = () => {
@@ -62,6 +73,7 @@ const PartnerScroll = () => {
 
     return (
         <PartnersContainer>
+            <Eyebrow>Trusted by</Eyebrow>
             <Title>Our Corporate Partners</Title>
             <PartnersScrollContainer>
                 {data.allPartnersJson.edges.map(({ node }) => (

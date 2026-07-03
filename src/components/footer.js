@@ -1,127 +1,101 @@
 import React from 'react'
 import s from 'styled-components'
-import { Row, Col } from 'react-bootstrap'
+import { Link } from 'gatsby'
 
-import { POPPINS_REGULAR } from '../styles/fonts'
-import { StyledLink, URL } from './typography'
+import { POPPINS_REGULAR, POPPINS_BOLD } from '../styles/fonts'
+import { StyledLink } from './typography'
+import { PLUM_DEEP, WHITE, ACCENT } from '../styles/constants'
+
+const Wrapper = s.footer`
+  background-color: ${PLUM_DEEP};
+  color: rgba(255, 255, 255, 0.55);
+  padding: 2.75rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+`
+
+const FBrand = s.div`
+  color: ${WHITE};
+  ${POPPINS_BOLD}
+`
+
+const FLinks = s.div`
+  display: flex;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+`
+
+const FLink = s(Link)`
+  color: rgba(255, 255, 255, 0.65) !important;
+  transition: color 0.2s ease;
+
+  :hover {
+    color: ${ACCENT} !important;
+  }
+`
+
+const FAnchor = s.a`
+  color: rgba(255, 255, 255, 0.65);
+  transition: color 0.2s ease;
+
+  :hover {
+    color: ${ACCENT};
+  }
+`
 
 const FooterText = s.p`
   ${POPPINS_REGULAR}
-  font-size: 80%;
-`
-
-const LeftSections = [
-  {
-    title: 'Home',
-    link: '/'
-  },
-  {
-    title: 'Team',
-    link: '/team'
-  },
-  {
-    title: 'Projects',
-    link: '/departments'
-  }
-]
-
-const RightSections = [
-  {
-    title: 'Partner with GRC',
-    link: 'https://www.thedp.com/'
-  },
-  {
-    title: 'LinkedIn',
-    link: 'https://www.linkedin.com/company/grcglobalgroup/'
-  },
-  {
-    title: 'Facebook',
-    link: 'https://www.facebook.com/whartongrc/'
-  },
-  {
-    title: 'Instagram',
-    link: 'https://www.instagram.com/grc_wharton/'
-  }
-]
-
-const StyledRow = s(Row)`
-  padding: 3rem 3rem;
-  background-color: rgba(224, 224, 224, 0.25);
-`
-
-const LeftCol = s(Col)`
-  border-right: 1px solid rgba(224,224,224,0.5);
-  margin-left: 14rem;
-  @media screen and (max-width: 768px) {
-    border-right: none;
-    border-bottom: 1px solid rgba(224,224,224,0.5);
-    margin-bottom: 1rem;
-  }
-`
-
-const RightCol = s(Col)`
-  margin-left: rem;
-
-  @media screen and (max-width: 768px) {
-    margin-left: 0;
-  }
+  font-size: 0.85rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.55);
 `
 
 const ApplyButton = s.div`
-  background-color: #19BAFD;
-  ${POPPINS_REGULAR}
-  border-radius: 6px;
-  width: 5rem;
-  text-alignment: center;
-  padding: 0.2rem 1rem;
-  color: white;
+  background-color: ${ACCENT};
+  color: ${PLUM_DEEP};
+  ${POPPINS_BOLD}
+  border-radius: 2px;
+  padding: 0.35rem 1rem;
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0.6rem;
 `
 
-const ColWithMargin = s(Col)`
-  @media screen and (max-width: 768px) {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-  }
-`
+const InternalSections = [
+  { title: 'Team', link: '/team' },
+  { title: 'Projects', link: '/projects' }
+]
 
-const FooterLogo = s.img`
-  position: absolute;
-  right: -10px;
-  bottom: -25px;
-  height: 50px;
-`
+const ExternalSections = [
+  { title: 'LinkedIn', link: 'https://www.linkedin.com/company/grcglobalgroup/' },
+  { title: 'Facebook', link: 'https://www.facebook.com/whartongrc/' },
+  { title: 'Instagram', link: 'https://www.instagram.com/grc_wharton/' }
+]
 
 export const Footer = () => (
-  <StyledRow>
-    <ColWithMargin md={6}>
-      <FooterText>
-        Made by the devs at GRC <br /> &copy; Wharton GRC 2024
-      </FooterText>
-      <FooterText>
-      wharton@grcglobalgroup.com
-      </FooterText>
+  <Wrapper>
+    <div>
+      <FBrand>Wharton GRC</FBrand>
+      <FooterText>wharton@grcglobalgroup.com</FooterText>
       <StyledLink to="/apply">
-        <ApplyButton> APPLY </ApplyButton>
+        <ApplyButton>Apply</ApplyButton>
       </StyledLink>
-    </ColWithMargin>
-    <Col md={6}>
-      <Row>
-        <LeftCol md={4}>
-          {LeftSections.map(({ title, link }) => (
-            <URL link={link}>
-              <FooterText> {title} </FooterText>
-            </URL>
-          ))}
-        </LeftCol>
-        <RightCol>
-          {RightSections.map(({ title, link }) => (
-            <URL link={link}>
-              <FooterText> {title} </FooterText>
-            </URL>
-          ))}
-        </RightCol>
-        <FooterLogo src="/logo-cube.png" />
-      </Row>
-    </Col>
-  </StyledRow>
+    </div>
+    <FLinks>
+      {InternalSections.map(({ title, link }) => (
+        <FLink to={link} key={title}>{title}</FLink>
+      ))}
+      {ExternalSections.map(({ title, link }) => (
+        <FAnchor href={link} target="_blank" rel="noreferrer" key={title}>{title}</FAnchor>
+      ))}
+    </FLinks>
+    <FooterText>© {new Date().getFullYear()} Wharton GRC · Global Research and Consulting</FooterText>
+  </Wrapper>
 )
