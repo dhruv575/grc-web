@@ -8,11 +8,6 @@ export const Header = ({ title = '' }) => (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Landing page of Wharton GRC that showcases our projects and team members." />
     <title>{`${title}Wharton GRC`}</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
 
     <meta
       property="og:title"

@@ -12,16 +12,18 @@ import {
   StyledAnchor
 } from '../components'
 import { POPPINS_LIGHT, POPPINS_SEMI_BOLD } from '../styles/fonts'
+import { PLUM, PLUM_DEEP, WHITE as WHITE_TOKEN } from '../styles/constants'
 
-const WHITE = `#FFFFFF`
-const DARK_BLUE = `#1e3a8a`
-const BOX_SHADOW = `0px 5px 20px rgba(0, 0, 0, 0.1)`
+const WHITE = WHITE_TOKEN
+const DARK_BLUE = PLUM
+const BOX_SHADOW = `0px 5px 20px rgba(27, 20, 32, 0.08)`
 
 const CardWrapper = s.div.attrs(({ className }) => ({
   className
 }))`
   background-color: ${WHITE};
-  border-radius: 15px;
+  border-radius: 4px;
+  border: 1px solid #eae3da;
   box-shadow: ${BOX_SHADOW};
   display: flex;
   justify-content: center;

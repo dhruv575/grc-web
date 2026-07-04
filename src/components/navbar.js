@@ -3,34 +3,43 @@ import { Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 
 import { StyledLink } from './typography';
-import { ApplyButtonNav } from './badge';
-import { POPPINS_SEMI_BOLD } from '../styles/fonts';
+import { POPPINS_MEDIUM } from '../styles/fonts';
+import { PLUM_DEEP, ACCENT } from '../styles/constants';
 
 const LINKS = [
-  {
-    name: 'Team',
-    link: '/team'
-  },
-  {
-    name: 'Projects',
-    link: '/projects'
-  }
+  { name: 'Team', link: '/team' },
+  { name: 'Projects', link: '/projects' }
 ];
 
 const NavBarText = styled(Navbar.Text)`
-  color: #3DB2C1;
-  ${POPPINS_SEMI_BOLD}
+  color: rgba(255, 255, 255, 0.75);
+  ${POPPINS_MEDIUM}
+  font-size: 0.92rem;
+  transition: color 0.2s ease;
+
+  :hover {
+    color: ${ACCENT};
+  }
 `;
 
-const NavText = ({ link, name }) => {
-  return (
-    <div style={{ marginRight: '1.5rem', display: 'flex', alignItems: 'center' }}>
-      <StyledLink to={link}>
-        <NavBarText>{name}</NavBarText>
-      </StyledLink>
-    </div>
-  );
-};
+const NavText = ({ link, name }) => (
+  <div style={{ marginRight: '1.7rem', display: 'flex', alignItems: 'center' }}>
+    <StyledLink to={link}>
+      <NavBarText>{name}</NavBarText>
+    </StyledLink>
+  </div>
+);
+
+const ApplyPill = styled.div`
+  color: ${PLUM_DEEP};
+  background-color: ${ACCENT};
+  ${POPPINS_MEDIUM}
+  border-radius: 2px;
+  padding: 0.45rem 1.1rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+`;
 
 const CollapseWrapper = styled(Navbar.Collapse)`
   justify-content: flex-end;
@@ -47,24 +56,26 @@ export const NavBar = () => (
     sticky="top"
     expand="lg"
     style={{
-      backgroundColor: '#FFFFFF',
-      boxShadow: '0px 5px 6px #00000029',
-      fontSize: '0.9rem'
+      backgroundColor: 'rgba(14, 36, 64, 0.96)',
+      backdropFilter: 'blur(10px)',
+      borderBottom: '1px solid rgba(255,255,255,0.14)',
+      fontSize: '0.9rem',
+      padding: '0.6rem 1rem'
     }}
   >
     <StyledLink to="/">
-      <Navbar.Brand>
-        <img src="/logo-rect.png" height="70" alt="logo" />
+      <Navbar.Brand style={{ margin: 0 }}>
+        <img src="/logo-rect.png" height="42" alt="Wharton GRC logo" />
       </Navbar.Brand>
     </StyledLink>
-    <Navbar.Toggle style={{ border: 'none' }} />
+    <Navbar.Toggle style={{ border: 'none', filter: 'invert(1)' }} />
     <Navbar.Collapse className="justify-content-end">
       <CollapseWrapper>
         {LINKS.map(link => (
           <NavText key={link.name} {...link} />
         ))}
         <StyledLink to="/apply">
-          <ApplyButtonNav>Apply</ApplyButtonNav>
+          <ApplyPill>Apply</ApplyPill>
         </StyledLink>
       </CollapseWrapper>
     </Navbar.Collapse>
