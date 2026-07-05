@@ -97,6 +97,10 @@ const ImgFrame = s.div`
 const MemberImg = s(Img)`
   height: 100%;
   width: 100%;
+
+  img {
+    object-position: center 20% !important;
+  }
 `;
 
 const NameLink = s.a`
@@ -159,7 +163,7 @@ const ProjectsBold = s.span`
 const Card = ({ name, position, major, projects, linkedin, img }) => (
   <CardWrapper>
     <ImgFrame>
-      <MemberImg fluid={img?.childImageSharp?.fluid} alt={name} />
+      <MemberImg fluid={img?.childImageSharp?.fluid} alt={name} imgStyle={{ objectPosition: 'center 20%' }} />
     </ImgFrame>
     {linkedin ? (
       <NameLink href={linkedin} target="_blank" rel="noreferrer">{name}</NameLink>
