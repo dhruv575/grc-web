@@ -12,13 +12,14 @@ const LINKS = [
 ];
 
 const NavBarText = styled(Navbar.Text)`
-  color: rgba(255, 255, 255, 0.75);
+  color: #FFFFFF !important;
   ${POPPINS_MEDIUM}
-  font-size: 0.92rem;
+  font-weight: 600;
+  font-size: 0.95rem;
   transition: color 0.2s ease;
 
   :hover {
-    color: ${ACCENT};
+    color: ${ACCENT} !important;
   }
 `;
 
@@ -34,10 +35,11 @@ const ApplyPill = styled.div`
   color: ${PLUM_DEEP};
   background-color: ${ACCENT};
   ${POPPINS_MEDIUM}
+  font-weight: 700;
   border-radius: 2px;
   padding: 0.45rem 1.1rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 `;
 
