@@ -158,8 +158,7 @@ const Heroism = () => (
       <Eyebrow>Global Research &amp; Consulting — Wharton Chapter</Eyebrow>
       <Headline>Student consultants, <em>working across borders.</em></Headline>
       <Lede>
-        GRC is an internationally-oriented educational non-profit connecting students to consulting work with real global impact. We've partnered with organizations like UNESCO, the World Bank, Wikipedia, Oxfam, and WWF — and we're always growing our network.
-      </Lede>
+        Global Research and Consulting Group is a 501(c)3 nonprofit that operates worldwide from leading universities with the mission of helping global non-profits, social impact startups, and governmental organizations achieve their goals while simultaneously empowering students to give back to the global community.
       <Stats>
         {stats.map(stat => (
           <Stat key={stat.label}>
