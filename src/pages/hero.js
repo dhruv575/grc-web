@@ -159,7 +159,8 @@ const Heroism = () => (
       <Headline>Student consultants, <em>working across borders.</em></Headline>
       <Lede>
         Global Research and Consulting Group is a 501(c)3 nonprofit that operates worldwide from leading universities with the mission of helping global non-profits, social impact startups, and governmental organizations achieve their goals while simultaneously empowering students to give back to the global community.
-      <Stats>
+      </Lede>
+  <Stats>
         {stats.map(stat => (
           <Stat key={stat.label}>
             <StatNum>{stat.num}</StatNum>
