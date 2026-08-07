@@ -74,7 +74,7 @@
         "name": "Dario Cavalieri",
         "position": "VP Finance",
         "major": "Finance",
-        "projects": "Confidential (NDA)",
+        "projects": "",
         "linkedin": "https://www.linkedin.com/in/drc47",
         "img": "../images/members/board2026/dario-cavalieri.jpg"
       },
@@ -159,12 +159,36 @@
         "img": "../images/members/board2026/andreana-lee.jpg"
       },
       {
+        "name": "Audrey Tong-Nomoto",
+        "position": "Project Lead",
+        "major": "Cognitive Science + Computer Science",
+        "projects": "Paramount, IBM",
+        "linkedin": "https://www.linkedin.com/in/audreytongnomoto/",
+        "img": "../images/members/board2026/audrey-tong-nomoto.jpg"
+      },
+      {
+        "name": "Edward Mukalazi",
+        "position": "Project Lead",
+        "major": "Political Science",
+        "projects": "Zana Africa",
+        "linkedin": "https://www.linkedin.com/in/edward-mukalazi-a9866a2b9",
+        "img": "../images/members/board2026/edward-mukalazi.jpg"
+      },
+      {
         "name": "Julia Wang",
         "position": "Project Lead",
         "major": "BEPP / Marketing Concentrations, Fine Arts / Design Minor",
-        "projects": "Team project under NDA",
+        "projects": "",
         "linkedin": "https://www.linkedin.com/in/juli-xyw",
         "img": "../images/members/board2026/julia-wang.jpg"
+      },
+      {
+        "name": "Katherine Wu",
+        "position": "Project Lead",
+        "major": "Finance and Statistics",
+        "projects": "SEPTA, Vanguard, Philips",
+        "linkedin": "https://www.linkedin.com/in/katherine-wu/",
+        "img": "../images/members/board2026/katherine-wu.jpg"
       },
       {
         "name": "Laxmi Viswanathan",
